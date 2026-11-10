@@ -1,0 +1,166 @@
+{
+  "resource_pack_name": "GawharaSMP_CustomItems",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "gawharaitems.flame_blade": {
+      "textures": [
+        "textures/items/flame_blade"
+      ]
+    },
+    "gawharaitems.frost_blade": {
+      "textures": [
+        "textures/items/frost_blade"
+      ]
+    },
+    "gawharaitems.lightning_blade": {
+      "textures": [
+        "textures/items/lightning_blade"
+      ]
+    },
+    "gawharaitems.shadow_blade": {
+      "textures": [
+        "textures/items/shadow_blade"
+      ]
+    },
+    "gawharaitems.venom_blade": {
+      "textures": [
+        "textures/items/venom_blade"
+      ]
+    },
+    "gawharaitems.vital_blade": {
+      "textures": [
+        "textures/items/vital_blade"
+      ]
+    },
+    "gawharaitems.dragon_blade": {
+      "textures": [
+        "textures/items/dragon_blade"
+      ]
+    },
+    "gawharaitems.spirit_blade": {
+      "textures": [
+        "textures/items/spirit_blade"
+      ]
+    },
+    "gawharaitems.shadow_helmet": {
+      "textures": [
+        "textures/items/shadow_helmet"
+      ]
+    },
+    "gawharaitems.shadow_chestplate": {
+      "textures": [
+        "textures/items/shadow_chestplate"
+      ]
+    },
+    "gawharaitems.shadow_leggings": {
+      "textures": [
+        "textures/items/shadow_leggings"
+      ]
+    },
+    "gawharaitems.shadow_boots": {
+      "textures": [
+        "textures/items/shadow_boots"
+      ]
+    },
+    "gawharaitems.royal_helmet": {
+      "textures": [
+        "textures/items/royal_helmet"
+      ]
+    },
+    "gawharaitems.royal_chestplate": {
+      "textures": [
+        "textures/items/royal_chestplate"
+      ]
+    },
+    "gawharaitems.royal_leggings": {
+      "textures": [
+        "textures/items/royal_leggings"
+      ]
+    },
+    "gawharaitems.royal_boots": {
+      "textures": [
+        "textures/items/royal_boots"
+      ]
+    },
+    "gawharaitems.dragon_helmet": {
+      "textures": [
+        "textures/items/dragon_helmet"
+      ]
+    },
+    "gawharaitems.dragon_chestplate": {
+      "textures": [
+        "textures/items/dragon_chestplate"
+      ]
+    },
+    "gawharaitems.dragon_leggings": {
+      "textures": [
+        "textures/items/dragon_leggings"
+      ]
+    },
+    "gawharaitems.dragon_boots": {
+      "textures": [
+        "textures/items/dragon_boots"
+      ]
+    },
+    "gawharaitems.demon_helmet": {
+      "textures": [
+        "textures/items/demon_helmet"
+      ]
+    },
+    "gawharaitems.demon_chestplate": {
+      "textures": [
+        "textures/items/demon_chestplate"
+      ]
+    },
+    "gawharaitems.demon_leggings": {
+      "textures": [
+        "textures/items/demon_leggings"
+      ]
+    },
+    "gawharaitems.demon_boots": {
+      "textures": [
+        "textures/items/demon_boots"
+      ]
+    },
+    "gawharaitems.ice_helmet": {
+      "textures": [
+        "textures/items/ice_helmet"
+      ]
+    },
+    "gawharaitems.ice_chestplate": {
+      "textures": [
+        "textures/items/ice_chestplate"
+      ]
+    },
+    "gawharaitems.ice_leggings": {
+      "textures": [
+        "textures/items/ice_leggings"
+      ]
+    },
+    "gawharaitems.ice_boots": {
+      "textures": [
+        "textures/items/ice_boots"
+      ]
+    },
+    "gawharaitems.angel_helmet": {
+      "textures": [
+        "textures/items/angel_helmet"
+      ]
+    },
+    "gawharaitems.angel_chestplate": {
+      "textures": [
+        "textures/items/angel_chestplate"
+      ]
+    },
+    "gawharaitems.angel_leggings": {
+      "textures": [
+        "textures/items/angel_leggings"
+      ]
+    },
+    "gawharaitems.angel_boots": {
+      "textures": [
+        "textures/items/angel_boots"
+      ]
+    }
+  }
+}

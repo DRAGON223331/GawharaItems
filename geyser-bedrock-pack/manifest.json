@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "GawharaSMP Custom Items",
+    "description": "Custom swords and six armor sets for GawharaSMP / Geyser",
+    "uuid": "10ae8c62-9ef4-41de-95c4-7fe74b532425",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      50
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "983cb577-82fa-42fe-8665-05488854d07f",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

@@ -9,6 +9,9 @@ public final class GawharaItemsPlugin extends JavaPlugin {
     @Override
     public void onEnable() {
         saveDefaultConfig();
+        // Merge new defaults into existing installations without overwriting their settings.
+        getConfig().options().copyDefaults(true);
+        saveConfig();
         itemFactory = new ItemFactory(this);
 
         getServer().getPluginManager().registerEvents(new ItemListener(this, itemFactory), this);

@@ -4,6 +4,12 @@ settings:
 cooldowns:
   flame_blade: 8
   frost_blade: 7
+  lightning_blade: 12
+  shadow_blade: 16
+  venom_blade: 12
+  vital_blade: 18
+  dragon_blade: 18
+  spirit_blade: 16
   lightning_wand: 12
   healing_wand: 15
 
@@ -17,13 +23,51 @@ abilities:
     damage: 2.0
     duration_ticks: 100
     amplifier: 1
+  lightning_blade:
+    range: 28
+    radius: 4.0
+    damage: 7.0
   lightning_wand:
     range: 25
     radius: 3.0
     damage: 6.0
   healing_wand:
     heal_amount: 6.0
+  shadow_blade:
+    radius: 6.0
+    damage: 3.0
+    duration_ticks: 100
+  venom_blade:
+    radius: 5.0
+    damage: 2.0
+    duration_ticks: 140
+  vital_blade:
+    radius: 5.0
+    damage: 4.0
+    heal_amount: 8.0
+  dragon_blade:
+    radius: 6.0
+    damage: 6.0
+    fire_ticks: 160
+  spirit_blade:
+    radius: 6.0
+    damage: 3.0
+    duration_ticks: 120
 
 guardian_armor:
   damage_reduction_per_piece: 0.025
   maximum_reduction: 0.10
+
+armor_sets:
+  shadow:
+    damage_reduction: 0.10
+  royal:
+    damage_reduction: 0.12
+  dragon:
+    damage_reduction: 0.10
+  demon:
+    damage_reduction: 0.08
+  ice:
+    damage_reduction: 0.10
+  angel:
+    damage_reduction: 0.10

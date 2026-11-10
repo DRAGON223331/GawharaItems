@@ -1,16 +1,13 @@
-طريقة رفع المشروع على GitHub
+رفع GawharaItems 1.1.0 على GitHub
 
-1) فك ضغط ملف GawharaItems-Source.zip على جهازك.
-2) افتح مستودعك: https://github.com/DRAGON223331/GawharaItems
-3) تأكد أنك على فرع main.
-4) اضغط Add file ثم Upload files.
-5) افتح المجلد GawharaItems بعد فك الضغط، وحدد كل الملفات والمجلدات الموجودة بداخله واسحبها إلى صفحة GitHub.
-   مهم: ارفع محتويات المجلد، وليس ملف ZIP نفسه، حتى يظهر build.gradle في جذر المستودع.
-6) اضغط Commit changes.
-7) افتح تبويب Actions وانتظر انتهاء Build GawharaItems.
-8) افتح آخر تشغيل ناجح وحمّل artifact باسم GawharaItems-JAR.
-9) فك ضغط ملف الـ artifact لتحصل على GawharaItems-1.0.0.jar.
-10) ارفع ملف JAR إلى مجلد plugins في سيرفر Paper ثم أعد تشغيل السيرفر بالكامل.
+تنبيه بخصوص Aternos:
+Aternos لا يسمح برفع ملفات Java Plugin JAR مخصصة من خارج مكتبته، ولا يوفر وصول FTP أو صلاحية رفع كاملة لملفات الإضافات. لذلك لن تستطيع تثبيت GawharaItems-1.1.0.jar على Aternos بمجرد رفعه. تحتاج استضافة تسمح بإضافات Paper مخصصة مثل exaroton، أو قبول الإضافة في مكتبة Aternos. رفع Resource Pack للـJava مسموح من صفحة Resource Packs، لكنه لا يثبت الإضافة نفسها.
+
+1) فك ضغط GawharaItems-Source-Custom.zip.
+2) ارفع محتويات مجلد GawharaItems إلى جذر مستودع GitHub (بحيث يظهر build.gradle في الجذر).
+3) افتح Actions وانتظر نجاح Build GawharaItems.
+4) حمّل artifact باسم GawharaItems-JAR واستخرج GawharaItems-1.1.0.jar.
+5) ارفع JAR إلى plugins في السيرفر وأعد تشغيله بالكامل.
 
 الأوامر:
 /gitems
@@ -18,4 +15,14 @@
 /gitems give <player> <item_id> [amount]
 /gitems reload
 
-ملاحظة: المشروع يستهدف Paper 26.3 ويستخدم Java 25. لم أرفق JAR جاهزًا لأن بيئة التجهيز الحالية تحتوي Java 21 فقط؛ GitHub Actions سيبني الملف باستخدام Java 25 بعد رفع الملفات.
+موديلات Java:
+- استخدم مجلد resourcepack-java-26.3 كـ Resource Pack. اضغط محتوياته إلى ZIP مع pack.mcmeta في جذر ZIP ثم ثبّته عند لاعبي Java أو استضفه كرابط HTTPS ليتم فرضه من إعدادات السيرفر.
+
+Geyser / Bedrock:
+- تأكد من enable-custom-content: true في إعدادات Geyser.
+- على Aternos تأكد أولًا من إمكانية الكتابة داخل مجلدي custom_mappings وpacks الخاصين بـGeyser؛ قد لا توفر لوحة الاستضافة وصولًا كاملًا لهما.
+- انسخ geyser-bedrock-pack/gawharaitems_mappings.json إلى مجلد custom_mappings في Geyser.
+- اضغط محتويات geyser-bedrock-pack في ملف MCpack بحيث يكون manifest.json في جذر الحزمة، وضعه داخل مجلد packs في Geyser.
+- أعد تشغيل Geyser والسيرفر.
+
+مهم: إضافة Paper تعمل للاعبي Java وBedrock، لكن الموديلات المخصصة لعميل Bedrock تتطلب ملفات Geyser المنفصلة. بعض لوحات الاستضافة قد لا تسمح بالوصول إلى مجلدات Geyser؛ يجب التأكد من إمكانية رفع الملفات.

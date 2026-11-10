@@ -1,95 +1,103 @@
-# GawharaItems
+# GawharaItems 1.1.0 - GawharaSMP
 
-A custom-items plugin for **GawharaSMP**, built for **Paper 26.3** and **Java 25**.
+Custom survival tools, eight elemental swords, six armor sets and item models for **Paper 26.3 / Java 25**.
 
-## Features
+## Added swords
 
-- Custom mining pickaxe and lumberjack axe.
-- Flame Blade and Frost Blade area abilities.
-- Lightning Wand and Healing Wand abilities.
-- Guardian armor pieces with a configurable damage-reduction bonus.
-- An in-game showcase menu; clicking an item explains its ability.
-- Admin commands for giving items to online players.
-- Configurable ability cooldowns and balance settings.
-- Custom item IDs stored with `PersistentDataContainer` (an anvil rename does not turn a normal item into a custom one).
-- GitHub Actions workflow that compiles the plugin and uploads the JAR as an artifact.
-- No client-side mods required.
+| ID | Name | Right-click ability |
+|---|---|---|
+| `flame_blade` | Flame Blade | Burns and damages nearby monsters |
+| `frost_blade` | Frost Blade | Damages and slows nearby monsters |
+| `lightning_blade` | Stormbreaker | Calls a lightning burst at the targeted block |
+| `shadow_blade` | Umbral Edge | Blinds and weakens nearby monsters |
+| `venom_blade` | Venom Fang | Poisons and damages nearby monsters |
+| `vital_blade` | Lifebinder | Damages nearby monsters and heals the wielder |
+| `dragon_blade` | Wyrmfang | Fire shockwave and knockback |
+| `spirit_blade` | Soulreaper | Marks nearby monsters and grants absorption/speed |
 
-This first release uses vanilla Minecraft item models. An optional resource pack can be added later for custom textures and 3D models.
+## Added armor sets
+
+- **Shadow**: Speed II, invisibility while sneaking, 10% damage reduction.
+- **Royal**: Resistance, Regeneration, 12% damage reduction.
+- **Dragon**: Fire Resistance, Strength, immunity to fire/lava damage, 10% damage reduction.
+- **Demon**: Strength II, Speed, 8% damage reduction.
+- **Ice**: Resistance, Speed, slows melee attackers, 10% damage reduction.
+- **Angel**: Slow Falling, Jump Boost II, 10% damage reduction.
+
+Set passives require all four pieces from the same set. Armor passives refresh every 2 seconds while worn. All sword abilities currently target monsters only; they do not damage other players.
+
+## Existing content kept
+
+Miner's Pickaxe, Lumberjack's Axe, Lightning Wand, Healing Wand, and the original Guardian armor remain available. The showcase menu now has pages so all items can be browsed.
 
 ## Commands
 
 | Command | Description | Permission |
 |---|---|---|
-| `/gitems` or `/gitems menu` | Open the item showcase | `gawharaitems.use` |
-| `/gitems list` | List all custom item IDs | `gawharaitems.admin` |
-| `/gitems give <player> <item_id> [amount]` | Give a custom item to an online player | `gawharaitems.admin` |
-| `/gitems reload` | Reload `config.yml` | `gawharaitems.admin` |
+| `/gitems` or `/gitems menu` | Open the item catalogue | `gawharaitems.use` |
+| `/gitems list` | List all item IDs | `gawharaitems.admin` |
+| `/gitems give <player> <item_id> [amount]` | Give an online player an item | `gawharaitems.admin` |
+| `/gitems reload` | Reload config.yml | `gawharaitems.admin` |
 
-Aliases: `/gitem`, `/gawharaitems`.
-
-## Item IDs
-
-- `miner_pickaxe`
-- `lumber_axe`
-- `flame_blade`
-- `frost_blade`
-- `lightning_wand`
-- `healing_wand`
-- `guardian_helmet`
-- `guardian_chestplate`
-- `guardian_leggings`
-- `guardian_boots`
-
-## Permissions and LuckPerms
-
-The plugin uses Bukkit permissions, so it works with LuckPerms without requiring LuckPerms as a hard plugin dependency.
-
-Examples:
+Example:
 
 ```text
-/lp group default permission set gawharaitems.use true
-/lp group admin permission set gawharaitems.admin true
+/gitems give Ent2am lightning_blade
+/gitems give Ent2am shadow_helmet
+/gitems give Ent2am shadow_chestplate
+/gitems give Ent2am shadow_leggings
+/gitems give Ent2am shadow_boots
 ```
 
-The `gawharaitems.use` permission defaults to true. The admin permission defaults to OP.
+## Hosting limitation: Aternos
 
-## Build with GitHub Actions
+Aternos does not allow uploading arbitrary custom Java plugin JAR files and does not provide full plugin-file/FTP access. Therefore, this custom `GawharaItems-1.1.0.jar` cannot be installed on an Aternos server through a normal upload. Use a host that allows custom Paper plugins (Aternos recommends exaroton for this use case), or have the plugin accepted into Aternos's supported plugin library. Aternos does allow Java server resource packs through its Resource Packs page, but that alone does not install the plugin.
 
-1. Upload the project files to the root of your GitHub repository, keeping the folder structure intact.
-2. Open the repository's **Actions** tab.
-3. Select **Build GawharaItems** and open the newest run.
-4. When the run succeeds, download the **GawharaItems-JAR** artifact.
-5. Extract the downloaded artifact ZIP to get `GawharaItems-1.0.0.jar`.
+## Install the plugin
 
-The workflow runs on pushes to `main`, pull requests targeting `main`, and manual dispatches. GitHub Actions uses JDK 25 and Gradle 9.2.1.
+1. Upload the contents of this repository to the GitHub repository root (the folder containing `build.gradle`).
+2. Open **Actions** and wait for **Build GawharaItems** to succeed.
+3. Download the `GawharaItems-JAR` artifact and extract `GawharaItems-1.1.0.jar`.
+4. Put the JAR in the server's `plugins` folder and restart the server fully. Do not use `/reload`.
 
-## Install on GawharaSMP
+The project is compiled with Java 25 and Paper API 26.3. The Paper API is `compileOnly` and is not bundled into the plugin.
 
-1. Download the JAR artifact from GitHub Actions.
-2. Put `GawharaItems-1.0.0.jar` in the server's `plugins` folder.
-3. Restart the server (a full restart is recommended; do not use `/reload`).
-4. Test with `/gitems` and, as an admin, `/gitems list`.
+## Java 26.3 custom models
 
-To give an item:
+The `resourcepack-java-26.3` folder contains the matching Java resource pack:
 
-```text
-/gitems give PlayerName flame_blade
-/gitems give PlayerName guardian_chestplate
-```
+- Custom sword item textures/models.
+- Individual inventory icons for each armor piece.
+- Custom worn armor textures and equipment assets for all six sets.
+
+Install the pack on every Java client via **Options > Resource Packs > Open Pack Folder**, then place the ZIP of the folder contents in `resourcepacks` and enable it. To force it from the server, host the ZIP at a direct HTTPS URL and configure the server resource-pack URL/hash in the server settings. The plugin does not host files by itself.
+
+The pack uses Java 26.3 resource-pack format 97.1 (`min_format: [97,1]`, `max_format: 97`). It is not intended for older Java versions.
+
+## Geyser / Floodgate / Bedrock
+
+Geyser does **not** convert Java resource packs automatically. The repository therefore includes a separate `geyser-bedrock-pack` folder containing:
+
+- `gawharaitems_mappings.json` for Geyser custom item definitions (mapping Java item models to Bedrock identifiers).
+- A Bedrock resource pack with inventory icons and armor attachables.
+
+Install both components:
+
+1. Make sure `gameplay.enable-custom-content: true` in Geyser's `config.yml`.
+2. Copy `gawharaitems_mappings.json` into Geyser's `custom_mappings` folder.
+3. Zip the **contents** of `geyser-bedrock-pack` (including `manifest.json` at the ZIP root) as an `.mcpack`, then place it in Geyser's `packs` folder.
+4. Restart the server/Geyser. Accept the resource pack on Bedrock when prompted.
+
+Paths vary by hosting panel and Geyser platform. For a plugin-based Geyser install, these are commonly under `plugins/Geyser-*/custom_mappings` and `plugins/Geyser-*/packs` (or the configured Geyser data directory). Aternos does not provide full plugin-file access, so it may not let you place the custom Geyser mapping in its required folder. Confirm that those Geyser custom-content folders are writable before expecting Bedrock custom textures to load.
+
+The Paper plugin logic itself remains compatible with Java and Bedrock players through Geyser/Floodgate. Bedrock custom visuals require the separate Geyser mapping and Bedrock pack above. Geyser documentation states that it does not convert Java packs and requires a separate Bedrock resource pack and mappings: https://geysermc.org/wiki/geyser/custom-items/
 
 ## Configuration
 
-Edit `plugins/GawharaItems/config.yml` to change:
+`plugins/GawharaItems/config.yml` contains cooldowns and damage reduction values. Armor effects and sword tuning are conservative defaults in this release. The `reload` command reloads configuration only; it does not replace custom item assets already cached by clients.
 
-- Ability cooldowns.
-- Ability radius, damage, duration, and healing amount.
-- Guardian armor damage reduction per piece and its maximum.
+## Notes
 
-Then run `/gitems reload`.
-
-## Compatibility
-
-- Server: Paper 26.3 (and compatible Paper forks).
-- Build/runtime Java requirement: Java 25.
-- Client: vanilla Java or Bedrock clients connecting through your existing Geyser setup; no client mod is needed.
+- Custom item identity is stored in the plugin's PersistentDataContainer key; renaming an item does not make it a custom item.
+- Resource pack visuals are client-side. If a client declines or cannot load the pack, the items still function but use fallback vanilla visuals.
+- Java pack visuals and Geyser Bedrock visuals are separate deliverables and must be installed separately.

@@ -1,0 +1,513 @@
+{
+  "format_version": 2,
+  "items": {
+    "minecraft:netherite_sword": [
+      {
+        "type": "definition",
+        "model": "gawharaitems:flame_blade",
+        "bedrock_identifier": "gawharaitems:flame_blade",
+        "display_name": "Flame Blade",
+        "bedrock_options": {
+          "icon": "gawharaitems.flame_blade",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:lightning_blade",
+        "bedrock_identifier": "gawharaitems:lightning_blade",
+        "display_name": "Lightning Blade",
+        "bedrock_options": {
+          "icon": "gawharaitems.lightning_blade",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:shadow_blade",
+        "bedrock_identifier": "gawharaitems:shadow_blade",
+        "display_name": "Shadow Blade",
+        "bedrock_options": {
+          "icon": "gawharaitems.shadow_blade",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:venom_blade",
+        "bedrock_identifier": "gawharaitems:venom_blade",
+        "display_name": "Venom Blade",
+        "bedrock_options": {
+          "icon": "gawharaitems.venom_blade",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:vital_blade",
+        "bedrock_identifier": "gawharaitems:vital_blade",
+        "display_name": "Vital Blade",
+        "bedrock_options": {
+          "icon": "gawharaitems.vital_blade",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:dragon_blade",
+        "bedrock_identifier": "gawharaitems:dragon_blade",
+        "display_name": "Dragon Blade",
+        "bedrock_options": {
+          "icon": "gawharaitems.dragon_blade",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:spirit_blade",
+        "bedrock_identifier": "gawharaitems:spirit_blade",
+        "display_name": "Spirit Blade",
+        "bedrock_options": {
+          "icon": "gawharaitems.spirit_blade",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      }
+    ],
+    "minecraft:diamond_sword": [
+      {
+        "type": "definition",
+        "model": "gawharaitems:frost_blade",
+        "bedrock_identifier": "gawharaitems:frost_blade",
+        "display_name": "Frost Blade",
+        "bedrock_options": {
+          "icon": "gawharaitems.frost_blade",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      }
+    ],
+    "minecraft:netherite_helmet": [
+      {
+        "type": "definition",
+        "model": "gawharaitems:shadow_helmet",
+        "bedrock_identifier": "gawharaitems:shadow_helmet",
+        "display_name": "Shadow Helmet",
+        "bedrock_options": {
+          "icon": "gawharaitems.shadow_helmet",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "asset_id": "gawharaitems:shadow"
+          }
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:royal_helmet",
+        "bedrock_identifier": "gawharaitems:royal_helmet",
+        "display_name": "Royal Helmet",
+        "bedrock_options": {
+          "icon": "gawharaitems.royal_helmet",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "asset_id": "gawharaitems:royal"
+          }
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:dragon_helmet",
+        "bedrock_identifier": "gawharaitems:dragon_helmet",
+        "display_name": "Dragon Helmet",
+        "bedrock_options": {
+          "icon": "gawharaitems.dragon_helmet",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "asset_id": "gawharaitems:dragon"
+          }
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:demon_helmet",
+        "bedrock_identifier": "gawharaitems:demon_helmet",
+        "display_name": "Demon Helmet",
+        "bedrock_options": {
+          "icon": "gawharaitems.demon_helmet",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "asset_id": "gawharaitems:demon"
+          }
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:ice_helmet",
+        "bedrock_identifier": "gawharaitems:ice_helmet",
+        "display_name": "Ice Helmet",
+        "bedrock_options": {
+          "icon": "gawharaitems.ice_helmet",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "asset_id": "gawharaitems:ice"
+          }
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:angel_helmet",
+        "bedrock_identifier": "gawharaitems:angel_helmet",
+        "display_name": "Angel Helmet",
+        "bedrock_options": {
+          "icon": "gawharaitems.angel_helmet",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "asset_id": "gawharaitems:angel"
+          }
+        }
+      }
+    ],
+    "minecraft:netherite_chestplate": [
+      {
+        "type": "definition",
+        "model": "gawharaitems:shadow_chestplate",
+        "bedrock_identifier": "gawharaitems:shadow_chestplate",
+        "display_name": "Shadow Chestplate",
+        "bedrock_options": {
+          "icon": "gawharaitems.shadow_chestplate",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "chest",
+            "asset_id": "gawharaitems:shadow"
+          }
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:royal_chestplate",
+        "bedrock_identifier": "gawharaitems:royal_chestplate",
+        "display_name": "Royal Chestplate",
+        "bedrock_options": {
+          "icon": "gawharaitems.royal_chestplate",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "chest",
+            "asset_id": "gawharaitems:royal"
+          }
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:dragon_chestplate",
+        "bedrock_identifier": "gawharaitems:dragon_chestplate",
+        "display_name": "Dragon Chestplate",
+        "bedrock_options": {
+          "icon": "gawharaitems.dragon_chestplate",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "chest",
+            "asset_id": "gawharaitems:dragon"
+          }
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:demon_chestplate",
+        "bedrock_identifier": "gawharaitems:demon_chestplate",
+        "display_name": "Demon Chestplate",
+        "bedrock_options": {
+          "icon": "gawharaitems.demon_chestplate",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "chest",
+            "asset_id": "gawharaitems:demon"
+          }
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:ice_chestplate",
+        "bedrock_identifier": "gawharaitems:ice_chestplate",
+        "display_name": "Ice Chestplate",
+        "bedrock_options": {
+          "icon": "gawharaitems.ice_chestplate",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "chest",
+            "asset_id": "gawharaitems:ice"
+          }
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:angel_chestplate",
+        "bedrock_identifier": "gawharaitems:angel_chestplate",
+        "display_name": "Angel Chestplate",
+        "bedrock_options": {
+          "icon": "gawharaitems.angel_chestplate",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "chest",
+            "asset_id": "gawharaitems:angel"
+          }
+        }
+      }
+    ],
+    "minecraft:netherite_leggings": [
+      {
+        "type": "definition",
+        "model": "gawharaitems:shadow_leggings",
+        "bedrock_identifier": "gawharaitems:shadow_leggings",
+        "display_name": "Shadow Leggings",
+        "bedrock_options": {
+          "icon": "gawharaitems.shadow_leggings",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "legs",
+            "asset_id": "gawharaitems:shadow"
+          }
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:royal_leggings",
+        "bedrock_identifier": "gawharaitems:royal_leggings",
+        "display_name": "Royal Leggings",
+        "bedrock_options": {
+          "icon": "gawharaitems.royal_leggings",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "legs",
+            "asset_id": "gawharaitems:royal"
+          }
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:dragon_leggings",
+        "bedrock_identifier": "gawharaitems:dragon_leggings",
+        "display_name": "Dragon Leggings",
+        "bedrock_options": {
+          "icon": "gawharaitems.dragon_leggings",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "legs",
+            "asset_id": "gawharaitems:dragon"
+          }
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:demon_leggings",
+        "bedrock_identifier": "gawharaitems:demon_leggings",
+        "display_name": "Demon Leggings",
+        "bedrock_options": {
+          "icon": "gawharaitems.demon_leggings",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "legs",
+            "asset_id": "gawharaitems:demon"
+          }
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:ice_leggings",
+        "bedrock_identifier": "gawharaitems:ice_leggings",
+        "display_name": "Ice Leggings",
+        "bedrock_options": {
+          "icon": "gawharaitems.ice_leggings",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "legs",
+            "asset_id": "gawharaitems:ice"
+          }
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:angel_leggings",
+        "bedrock_identifier": "gawharaitems:angel_leggings",
+        "display_name": "Angel Leggings",
+        "bedrock_options": {
+          "icon": "gawharaitems.angel_leggings",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "legs",
+            "asset_id": "gawharaitems:angel"
+          }
+        }
+      }
+    ],
+    "minecraft:netherite_boots": [
+      {
+        "type": "definition",
+        "model": "gawharaitems:shadow_boots",
+        "bedrock_identifier": "gawharaitems:shadow_boots",
+        "display_name": "Shadow Boots",
+        "bedrock_options": {
+          "icon": "gawharaitems.shadow_boots",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "feet",
+            "asset_id": "gawharaitems:shadow"
+          }
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:royal_boots",
+        "bedrock_identifier": "gawharaitems:royal_boots",
+        "display_name": "Royal Boots",
+        "bedrock_options": {
+          "icon": "gawharaitems.royal_boots",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "feet",
+            "asset_id": "gawharaitems:royal"
+          }
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:dragon_boots",
+        "bedrock_identifier": "gawharaitems:dragon_boots",
+        "display_name": "Dragon Boots",
+        "bedrock_options": {
+          "icon": "gawharaitems.dragon_boots",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "feet",
+            "asset_id": "gawharaitems:dragon"
+          }
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:demon_boots",
+        "bedrock_identifier": "gawharaitems:demon_boots",
+        "display_name": "Demon Boots",
+        "bedrock_options": {
+          "icon": "gawharaitems.demon_boots",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "feet",
+            "asset_id": "gawharaitems:demon"
+          }
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:ice_boots",
+        "bedrock_identifier": "gawharaitems:ice_boots",
+        "display_name": "Ice Boots",
+        "bedrock_options": {
+          "icon": "gawharaitems.ice_boots",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "feet",
+            "asset_id": "gawharaitems:ice"
+          }
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:angel_boots",
+        "bedrock_identifier": "gawharaitems:angel_boots",
+        "display_name": "Angel Boots",
+        "bedrock_options": {
+          "icon": "gawharaitems.angel_boots",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "feet",
+            "asset_id": "gawharaitems:angel"
+          }
+        }
+      }
+    ]
+  }
+}
