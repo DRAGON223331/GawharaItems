@@ -1,0 +1,21 @@
+طريقة رفع المشروع على GitHub
+
+1) فك ضغط ملف GawharaItems-Source.zip على جهازك.
+2) افتح مستودعك: https://github.com/DRAGON223331/GawharaItems
+3) تأكد أنك على فرع main.
+4) اضغط Add file ثم Upload files.
+5) افتح المجلد GawharaItems بعد فك الضغط، وحدد كل الملفات والمجلدات الموجودة بداخله واسحبها إلى صفحة GitHub.
+   مهم: ارفع محتويات المجلد، وليس ملف ZIP نفسه، حتى يظهر build.gradle في جذر المستودع.
+6) اضغط Commit changes.
+7) افتح تبويب Actions وانتظر انتهاء Build GawharaItems.
+8) افتح آخر تشغيل ناجح وحمّل artifact باسم GawharaItems-JAR.
+9) فك ضغط ملف الـ artifact لتحصل على GawharaItems-1.0.0.jar.
+10) ارفع ملف JAR إلى مجلد plugins في سيرفر Paper ثم أعد تشغيل السيرفر بالكامل.
+
+الأوامر:
+/gitems
+/gitems list
+/gitems give <player> <item_id> [amount]
+/gitems reload
+
+ملاحظة: المشروع يستهدف Paper 26.3 ويستخدم Java 25. لم أرفق JAR جاهزًا لأن بيئة التجهيز الحالية تحتوي Java 21 فقط؛ GitHub Actions سيبني الملف باستخدام Java 25 بعد رفع الملفات.

@@ -1,0 +1,18 @@
+name: GawharaItems
+version: '1.0.0'
+main: net.gawharasmp.items.GawharaItemsPlugin
+api-version: '26.3'
+description: Custom survival tools, weapons, wands and armor for GawharaSMP.
+author: Ent2am
+commands:
+  gitems:
+    description: Open the GawharaItems menu or manage custom items.
+    usage: /gitems [menu|list|give|reload]
+    aliases: [gitem, gawharaitems]
+permissions:
+  gawharaitems.use:
+    description: Allows opening the custom items showcase.
+    default: true
+  gawharaitems.admin:
+    description: Allows giving custom items and reloading the plugin.
+    default: op

@@ -1,0 +1,29 @@
+settings:
+  prefix: '&bGawharaItems &8» '
+
+cooldowns:
+  flame_blade: 8
+  frost_blade: 7
+  lightning_wand: 12
+  healing_wand: 15
+
+abilities:
+  flame_blade:
+    radius: 5.0
+    damage: 4.0
+    fire_ticks: 100
+  frost_blade:
+    radius: 5.0
+    damage: 2.0
+    duration_ticks: 100
+    amplifier: 1
+  lightning_wand:
+    range: 25
+    radius: 3.0
+    damage: 6.0
+  healing_wand:
+    heal_amount: 6.0
+
+guardian_armor:
+  damage_reduction_per_piece: 0.025
+  maximum_reduction: 0.10
