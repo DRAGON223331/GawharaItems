@@ -1,6 +1,13 @@
-# GawharaItems 1.1.1 - GawharaSMP
+# GawharaItems 1.1.2 - GawharaSMP
 
-Custom survival tools, eight elemental swords, six armor sets and item models for **Paper 26.3 / Java 25**.
+Custom survival tools, eight elemental swords, six armor sets and redesigned item/worn textures for **Paper 26.3 / Java 25**.
+
+## Visual redesign in 1.1.2
+
+- Replaced the original minimal 32x32 item icons with detailed 64x64 pixel-art icons for all eight swords and 24 armor pieces.
+- Rebuilt the six Java and Bedrock worn-armor texture atlases using the standard 64x32 humanoid UV layout (helmet, torso, arms, boots and leggings).
+- Preserved the same item IDs, model IDs, equipment asset IDs, Geyser mappings, abilities and menu behavior.
+- Armor on the player is rendered through Minecraft's standard equipment texture layers; this is a 2D armor-surface system, not an arbitrary 3D player-mesh replacement.
 
 ## Added swords
 
@@ -52,13 +59,13 @@ Example:
 
 ## Hosting limitation: Aternos
 
-Aternos does not allow uploading arbitrary custom Java plugin JAR files and does not provide full plugin-file/FTP access. Therefore, this custom `GawharaItems-1.1.1.jar` cannot be installed on an Aternos server through a normal upload. Use a host that allows custom Paper plugins (Aternos recommends exaroton for this use case), or have the plugin accepted into Aternos's supported plugin library. Aternos does allow Java server resource packs through its Resource Packs page, but that alone does not install the plugin.
+Aternos does not allow uploading arbitrary custom Java plugin JAR files and does not provide full plugin-file/FTP access. Therefore, this custom `GawharaItems-1.1.2.jar` cannot be installed on an Aternos server through a normal upload. Use a host that allows custom Paper plugins (Aternos recommends exaroton for this use case), or have the plugin accepted into Aternos's supported plugin library. Aternos does allow Java server resource packs through its Resource Packs page, but that alone does not install the plugin.
 
 ## Install the plugin
 
 1. Upload the contents of this repository to the GitHub repository root (the folder containing `build.gradle`).
 2. Open **Actions** and wait for **Build GawharaItems** to succeed.
-3. Download the `GawharaItems-JAR` artifact and extract `GawharaItems-1.1.1.jar`.
+3. Download the `GawharaItems-JAR` artifact and extract `GawharaItems-1.1.2.jar`.
 4. Put the JAR in the server's `plugins` folder and restart the server fully. Do not use `/reload`.
 
 The project is compiled with Java 25 and Paper API 26.3. The Paper API is `compileOnly` and is not bundled into the plugin.
