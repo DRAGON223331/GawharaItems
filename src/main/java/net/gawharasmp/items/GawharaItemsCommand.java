@@ -15,10 +15,12 @@ import java.util.List;
 public final class GawharaItemsCommand implements TabExecutor {
     private final JavaPlugin plugin;
     private final ItemFactory itemFactory;
+    private final ResourcePackManager resourcePackManager;
 
-    public GawharaItemsCommand(JavaPlugin plugin, ItemFactory itemFactory) {
+    public GawharaItemsCommand(JavaPlugin plugin, ItemFactory itemFactory, ResourcePackManager resourcePackManager) {
         this.plugin = plugin;
         this.itemFactory = itemFactory;
+        this.resourcePackManager = resourcePackManager;
     }
 
     @Override
@@ -33,6 +35,15 @@ public final class GawharaItemsCommand implements TabExecutor {
                 return true;
             }
             ItemMenu.open(player, itemFactory);
+            return true;
+        }
+
+        if (args[0].equalsIgnoreCase("pack")) {
+            if (!(sender instanceof Player player)) {
+                sender.sendMessage(ChatColor.RED + "Only players can request the resource pack.");
+                return true;
+            }
+            resourcePackManager.send(player, true);
             return true;
         }
 
@@ -112,7 +123,7 @@ public final class GawharaItemsCommand implements TabExecutor {
             return true;
         }
 
-        sender.sendMessage(ChatColor.YELLOW + "Usage: /gitems [menu|list|give|reload]");
+        sender.sendMessage(ChatColor.YELLOW + "Usage: /gitems [menu|pack|list|give|reload]");
         return true;
     }
 
@@ -120,7 +131,7 @@ public final class GawharaItemsCommand implements TabExecutor {
     public List<String> onTabComplete(CommandSender sender, Command command,
                                       String alias, String[] args) {
         if (args.length == 1) {
-            return List.of("menu", "list", "give", "reload").stream()
+            return List.of("menu", "pack", "list", "give", "reload").stream()
                     .filter(value -> value.startsWith(args[0].toLowerCase()))
                     .toList();
         }

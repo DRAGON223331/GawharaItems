@@ -13,9 +13,11 @@ public final class GawharaItemsPlugin extends JavaPlugin {
         getConfig().options().copyDefaults(true);
         saveConfig();
         itemFactory = new ItemFactory(this);
+        ResourcePackManager resourcePackManager = new ResourcePackManager(this);
 
         getServer().getPluginManager().registerEvents(new ItemListener(this, itemFactory), this);
         getServer().getPluginManager().registerEvents(new MenuListener(itemFactory), this);
+        getServer().getPluginManager().registerEvents(resourcePackManager, this);
 
         PluginCommand command = getCommand("gitems");
         if (command == null) {
@@ -24,11 +26,17 @@ public final class GawharaItemsPlugin extends JavaPlugin {
             return;
         }
 
-        GawharaItemsCommand executor = new GawharaItemsCommand(this, itemFactory);
+        GawharaItemsCommand executor = new GawharaItemsCommand(this, itemFactory, resourcePackManager);
         command.setExecutor(executor);
         command.setTabCompleter(executor);
 
         getLogger().info("GawharaItems enabled. Loaded "
                 + ItemType.values().length + " custom item types.");
+        String resourcePackUrl = getConfig().getString("resource-pack.url", "");
+        if (getConfig().getBoolean("resource-pack.enabled", true)
+                && (resourcePackUrl == null || resourcePackUrl.isBlank())) {
+            getLogger().warning("Automatic Java resource-pack delivery is enabled but resource-pack.url is empty. "
+                    + "Upload the Java pack to a direct HTTPS host and set its URL in config.yml.");
+        }
     }
 }
