@@ -106,9 +106,9 @@
         },
         "components": {
           "minecraft:equippable": {
-            "slot": "head",
-            "asset_id": "gawharaitems:shadow"
-          }
+            "slot": "head"
+          },
+          "minecraft:max_stack_size": 1
         }
       },
       {
@@ -123,9 +123,9 @@
         },
         "components": {
           "minecraft:equippable": {
-            "slot": "head",
-            "asset_id": "gawharaitems:royal"
-          }
+            "slot": "head"
+          },
+          "minecraft:max_stack_size": 1
         }
       },
       {
@@ -140,9 +140,9 @@
         },
         "components": {
           "minecraft:equippable": {
-            "slot": "head",
-            "asset_id": "gawharaitems:dragon"
-          }
+            "slot": "head"
+          },
+          "minecraft:max_stack_size": 1
         }
       },
       {
@@ -157,9 +157,9 @@
         },
         "components": {
           "minecraft:equippable": {
-            "slot": "head",
-            "asset_id": "gawharaitems:demon"
-          }
+            "slot": "head"
+          },
+          "minecraft:max_stack_size": 1
         }
       },
       {
@@ -174,9 +174,9 @@
         },
         "components": {
           "minecraft:equippable": {
-            "slot": "head",
-            "asset_id": "gawharaitems:ice"
-          }
+            "slot": "head"
+          },
+          "minecraft:max_stack_size": 1
         }
       },
       {
@@ -191,9 +191,9 @@
         },
         "components": {
           "minecraft:equippable": {
-            "slot": "head",
-            "asset_id": "gawharaitems:angel"
-          }
+            "slot": "head"
+          },
+          "minecraft:max_stack_size": 1
         }
       }
     ],
@@ -210,9 +210,9 @@
         },
         "components": {
           "minecraft:equippable": {
-            "slot": "chest",
-            "asset_id": "gawharaitems:shadow"
-          }
+            "slot": "chest"
+          },
+          "minecraft:max_stack_size": 1
         }
       },
       {
@@ -227,9 +227,9 @@
         },
         "components": {
           "minecraft:equippable": {
-            "slot": "chest",
-            "asset_id": "gawharaitems:royal"
-          }
+            "slot": "chest"
+          },
+          "minecraft:max_stack_size": 1
         }
       },
       {
@@ -244,9 +244,9 @@
         },
         "components": {
           "minecraft:equippable": {
-            "slot": "chest",
-            "asset_id": "gawharaitems:dragon"
-          }
+            "slot": "chest"
+          },
+          "minecraft:max_stack_size": 1
         }
       },
       {
@@ -261,9 +261,9 @@
         },
         "components": {
           "minecraft:equippable": {
-            "slot": "chest",
-            "asset_id": "gawharaitems:demon"
-          }
+            "slot": "chest"
+          },
+          "minecraft:max_stack_size": 1
         }
       },
       {
@@ -278,9 +278,9 @@
         },
         "components": {
           "minecraft:equippable": {
-            "slot": "chest",
-            "asset_id": "gawharaitems:ice"
-          }
+            "slot": "chest"
+          },
+          "minecraft:max_stack_size": 1
         }
       },
       {
@@ -295,9 +295,9 @@
         },
         "components": {
           "minecraft:equippable": {
-            "slot": "chest",
-            "asset_id": "gawharaitems:angel"
-          }
+            "slot": "chest"
+          },
+          "minecraft:max_stack_size": 1
         }
       }
     ],
@@ -314,9 +314,9 @@
         },
         "components": {
           "minecraft:equippable": {
-            "slot": "legs",
-            "asset_id": "gawharaitems:shadow"
-          }
+            "slot": "legs"
+          },
+          "minecraft:max_stack_size": 1
         }
       },
       {
@@ -331,9 +331,9 @@
         },
         "components": {
           "minecraft:equippable": {
-            "slot": "legs",
-            "asset_id": "gawharaitems:royal"
-          }
+            "slot": "legs"
+          },
+          "minecraft:max_stack_size": 1
         }
       },
       {
@@ -348,9 +348,9 @@
         },
         "components": {
           "minecraft:equippable": {
-            "slot": "legs",
-            "asset_id": "gawharaitems:dragon"
-          }
+            "slot": "legs"
+          },
+          "minecraft:max_stack_size": 1
         }
       },
       {
@@ -365,9 +365,9 @@
         },
         "components": {
           "minecraft:equippable": {
-            "slot": "legs",
-            "asset_id": "gawharaitems:demon"
-          }
+            "slot": "legs"
+          },
+          "minecraft:max_stack_size": 1
         }
       },
       {
@@ -382,9 +382,9 @@
         },
         "components": {
           "minecraft:equippable": {
-            "slot": "legs",
-            "asset_id": "gawharaitems:ice"
-          }
+            "slot": "legs"
+          },
+          "minecraft:max_stack_size": 1
         }
       },
       {
@@ -399,9 +399,9 @@
         },
         "components": {
           "minecraft:equippable": {
-            "slot": "legs",
-            "asset_id": "gawharaitems:angel"
-          }
+            "slot": "legs"
+          },
+          "minecraft:max_stack_size": 1
         }
       }
     ],
@@ -418,9 +418,9 @@
         },
         "components": {
           "minecraft:equippable": {
-            "slot": "feet",
-            "asset_id": "gawharaitems:shadow"
-          }
+            "slot": "feet"
+          },
+          "minecraft:max_stack_size": 1
         }
       },
       {
@@ -435,9 +435,9 @@
         },
         "components": {
           "minecraft:equippable": {
-            "slot": "feet",
-            "asset_id": "gawharaitems:royal"
-          }
+            "slot": "feet"
+          },
+          "minecraft:max_stack_size": 1
         }
       },
       {
@@ -452,9 +452,9 @@
         },
         "components": {
           "minecraft:equippable": {
-            "slot": "feet",
-            "asset_id": "gawharaitems:dragon"
-          }
+            "slot": "feet"
+          },
+          "minecraft:max_stack_size": 1
         }
       },
       {
@@ -469,9 +469,9 @@
         },
         "components": {
           "minecraft:equippable": {
-            "slot": "feet",
-            "asset_id": "gawharaitems:demon"
-          }
+            "slot": "feet"
+          },
+          "minecraft:max_stack_size": 1
         }
       },
       {
@@ -486,9 +486,9 @@
         },
         "components": {
           "minecraft:equippable": {
-            "slot": "feet",
-            "asset_id": "gawharaitems:ice"
-          }
+            "slot": "feet"
+          },
+          "minecraft:max_stack_size": 1
         }
       },
       {
@@ -503,9 +503,9 @@
         },
         "components": {
           "minecraft:equippable": {
-            "slot": "feet",
-            "asset_id": "gawharaitems:angel"
-          }
+            "slot": "feet"
+          },
+          "minecraft:max_stack_size": 1
         }
       }
     ]
