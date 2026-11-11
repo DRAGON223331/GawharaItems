@@ -41,7 +41,7 @@ public final class ItemFactory {
             meta.setItemModel(new NamespacedKey(plugin, type.getModelId()));
         }
 
-        // Custom equipment asset controls the worn appearance of the six armor sets.
+        // Custom equipment assets control the worn appearance of all nine armor sets.
         if (type.isArmorPiece()) {
             EquippableComponent equippable = meta.getEquippable();
             equippable.setModel(new NamespacedKey(plugin, type.getArmorSet()));
@@ -75,14 +75,25 @@ public final class ItemFactory {
 
     private void applyEnchantments(ItemMeta meta, ItemType type) {
         switch (type) {
-            case MINER_PICKAXE -> {
-                enchant(meta, "efficiency", 5); enchant(meta, "unbreaking", 3); enchant(meta, "fortune", 2);
+            case MINER_PICKAXE, SHADOW_TOOL, ROYAL_TOOL, DRAGON_TOOL, DEMON_TOOL,
+                 ICE_TOOL, ANGEL_TOOL, WARRIOR_TOOL, VIKING_TOOL, GLADIATOR_TOOL -> {
+                enchant(meta, "efficiency", 5); enchant(meta, "unbreaking", 3); enchant(meta, "fortune", 3);
             }
             case LUMBER_AXE -> {
-                enchant(meta, "efficiency", 4); enchant(meta, "unbreaking", 3);
+                enchant(meta, "efficiency", 5); enchant(meta, "unbreaking", 3);
             }
-            case FLAME_BLADE, DRAGON_BLADE -> {
+            case FLAME_BLADE, DRAGON_BLADE, DRAGON_WEAPON -> {
                 enchant(meta, "sharpness", 5); enchant(meta, "fire_aspect", 2); enchant(meta, "unbreaking", 3);
+            }
+            case SHADOW_WEAPON, ROYAL_WEAPON, DEMON_WEAPON, WARRIOR_WEAPON,
+                 VIKING_WEAPON, GLADIATOR_WEAPON, WAR_HAMMER -> {
+                enchant(meta, "sharpness", 5); enchant(meta, "unbreaking", 3);
+            }
+            case ICE_WEAPON, ANGEL_WEAPON, BATTLE_SPEAR -> {
+                enchant(meta, "impaling", 5); enchant(meta, "unbreaking", 3);
+            }
+            case HUNTER_CROSSBOW -> {
+                enchant(meta, "quick_charge", 3); enchant(meta, "piercing", 4); enchant(meta, "unbreaking", 3);
             }
             case FROST_BLADE, LIGHTNING_BLADE, SHADOW_BLADE, VENOM_BLADE,
                  VITAL_BLADE, SPIRIT_BLADE -> {
@@ -94,7 +105,10 @@ public final class ItemFactory {
                  DRAGON_HELMET, DRAGON_CHESTPLATE, DRAGON_LEGGINGS, DRAGON_BOOTS,
                  DEMON_HELMET, DEMON_CHESTPLATE, DEMON_LEGGINGS, DEMON_BOOTS,
                  ICE_HELMET, ICE_CHESTPLATE, ICE_LEGGINGS, ICE_BOOTS,
-                 ANGEL_HELMET, ANGEL_CHESTPLATE, ANGEL_LEGGINGS, ANGEL_BOOTS -> {
+                 ANGEL_HELMET, ANGEL_CHESTPLATE, ANGEL_LEGGINGS, ANGEL_BOOTS,
+                 WARRIOR_HELMET, WARRIOR_CHESTPLATE, WARRIOR_LEGGINGS, WARRIOR_BOOTS,
+                 VIKING_HELMET, VIKING_CHESTPLATE, VIKING_LEGGINGS, VIKING_BOOTS,
+                 GLADIATOR_HELMET, GLADIATOR_CHESTPLATE, GLADIATOR_LEGGINGS, GLADIATOR_BOOTS -> {
                 enchant(meta, "protection", 4); enchant(meta, "unbreaking", 3);
             }
             default -> { /* Wands use their abilities instead of combat enchantments. */ }

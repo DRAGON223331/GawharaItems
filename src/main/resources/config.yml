@@ -8,7 +8,7 @@ settings:
 resource-pack:
   enabled: true
   url: 'https://raw.githubusercontent.com/DRAGON223331/GawharaItems/main/resourcepack-java-26.3.zip'
-  sha1: 'f9f3f151e5bdedc6664259de7df80c364f1aef2d'
+  sha1: 'dfe6e82c11d3950ba8beca7b3c0919352b7a105b'
   required: false
   join-delay-ticks: 40
   prompt: 'Download the GawharaSMP custom weapons and armor pack?'
@@ -83,3 +83,10 @@ armor_sets:
     damage_reduction: 0.10
   angel:
     damage_reduction: 0.10
+
+  warrior:
+    damage_reduction: 0.12
+  viking:
+    damage_reduction: 0.10
+  gladiator:
+    damage_reduction: 0.11

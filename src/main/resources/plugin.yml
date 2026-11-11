@@ -1,13 +1,13 @@
 name: GawharaItems
-version: '1.1.7'
+version: '1.2.0'
 main: net.gawharasmp.items.GawharaItemsPlugin
 api-version: '26.3'
-description: Custom survival tools, elemental weapons and six armor sets for GawharaSMP.
+description: Custom survival tools, elemental weapons and nine medieval armor sets for GawharaSMP.
 author: Ent2am
 commands:
   gitems:
     description: Open the GawharaItems menu or manage custom items.
-    usage: /gitems [menu|pack|list|give|reload]
+    usage: /gitems [menu|pack|list|give|bundle|reload]
     aliases: [gitem, gawharaitems]
   gpack:
     description: Re-download the GawharaSMP resource pack.

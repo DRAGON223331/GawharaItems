@@ -1,19 +1,40 @@
-GawharaItems 1.1.7 - إعادة تصميم خامات الدروع
-- الخامات اتعمل لها رسم جديد على تخطيط دروع ماينكرافت الأصلي (64x32): خوذة بفتحة وجه، صدرية بأكتاف وحزام، بنطلون بركبة، وبوتس.
-- كل طقم له لون وشعار مميز: Shadow هلال، Royal تاج، Dragon لهب، Demon قرون، Ice ندفة ثلج، Angel صليب نوراني.
-- نفس الخامات اتطبقت على Java وBedrock.
-- SHA-1 الجديد للـ ZIP: f9f3f151e5bdedc6664259de7df80c364f1aef2d
+GawharaItems 1.2.0 — Medieval War Armory
 
-التركيب على Java:
-1) ارفع resourcepack-java-26.3.zip على نفس رابط GitHub Raw (من غير ما تفتحه أو تعدل فيه).
-2) عدّل sha1 في plugins/GawharaItems/config.yml بالقيمة الجديدة.
-3) /gitems reload، ثم اخرج وادخل ووافق على الـ pack.
-اللاعبين التانيين لازم يكونوا قبلوا الـ resource pack عشان يشوفوا الدروع.
+التعديلات:
+- إعادة رسم أيقونات الخوذ والصّدريات والبناطيل والأحذية لتظهر كقطع دروع ماينكرافت فعلية وواضحة.
+- إضافة 3 أطقم حربية جديدة: Warrior وViking وGladiator، ليصبح الإجمالي 9 أطقم.
+- التصميم بقى بطابع حربي قديم: حديد، فولاذ، جلد، برونز، خوذ بواقي وجه ودرع كتف وركب؛ بدون شكل دروع مستقبلية أو Sci‑Fi.
+- إضافة سلاح وأداة تعدين مميزين لكل Bundle، بالإضافة إلى War Hammer وHunter Crossbow وBattle Spear.
+- تغيير رسمة البيك إكس والفأس العاديين.
+- تحديث أيقونات Java وBedrock وخامات الدروع أثناء اللبس وملفات Geyser mappings مع بعض.
+- إضافة أمر يعطي كل Bundle منفصلًا مع سلاحه وأداة التعدين الخاصة به: /gitems bundle <player> <set>.
 
-التركيب على Bedrock (Geyser):
-احذف نسخ GawharaItems القديمة من plugins/Geyser-Spigot/packs وحط GawharaItems-Geyser-Bedrock-1.1.7.mcpack،
-وحط gawharaitems_mappings-1.1.7.json في custom_mappings بدل القديم، وأعد تشغيل السيرفر.
+الأطقم المتاحة:
+shadow, royal, dragon, demon, ice, angel, warrior, viking, gladiator
 
-أمر جديد للاعبين: /gpack (أو /pack) لإعادة طلب الـ resource pack لو رفضه اللاعب.
-لو ما ظهرتش رسالة التحميل: من قائمة السيرفرات اضغط Edit على السيرفر وخلّي Server Resource Packs = Enabled.
-هذا التعديل داخل كود الـ JAR، فلازم تبني JAR جديد (GitHub Actions) وتستبدله في plugins.
+SHA-1 لحزمة Java الحالية:
+dfe6e82c11d3950ba8beca7b3c0919352b7a105b
+تركيب Java:
+1) ارفع resourcepack-java-26.3.zip على رابط HTTPS مباشر.
+2) تأكد أن قيمة sha1 داخل plugins/GawharaItems/config.yml هي نفس القيمة أعلاه.
+3) حدّث JAR الخاص بالبلاجن بعد بنائه باستخدام Java 25.
+4) أعد تشغيل السيرفر، ثم وافق على تحميل Resource Pack.
+5) اللاعب يقدر يطلب الحزمة مرة أخرى بالأمر /gpack.
+
+تركيب Bedrock عبر Geyser:
+1) أوقف السيرفر.
+2) احذف نسخ GawharaItems القديمة من plugins/Geyser-Spigot/packs.
+3) ضع GawharaItems-Geyser-Bedrock-1.2.0.mcpack داخل packs.
+4) استبدل ملف custom mappings بالملف gawharaitems_mappings-1.2.0.json داخل custom_mappings.
+5) تأكد أن enable-custom-content: true.
+6) أعد تشغيل Geyser والسيرفر بالكامل. لو الأيقونات أو الدروع القديمة ما زالت ظاهرة، امسح Server Resource Pack Cache على جهاز Bedrock ثم ادخل من جديد.
+
+أوامر مهمة:
+/gitems list
+/gitems give <player> <item_id> [amount]
+/gitems bundle <player> <set>
+/gitems pack
+/gitems reload
+
+ملاحظة بناء:
+المشروع يستهدف Paper 26.3 وJava 25. نسخة بيئة العمل الحالية فيها Java 21 فقط، لذلك يلزم بناء JAR من GitHub Actions أو بيئة فيها JDK 25.

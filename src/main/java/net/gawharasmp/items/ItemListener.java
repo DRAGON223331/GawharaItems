@@ -279,6 +279,18 @@ public final class ItemListener implements Listener {
                     player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW_FALLING, 60, 0));
                     player.addPotionEffect(new PotionEffect(PotionEffectType.JUMP_BOOST, 60, 1));
                 }
+                case "warrior" -> {
+                    player.addPotionEffect(new PotionEffect(PotionEffectType.RESISTANCE, 60, 0));
+                    player.addPotionEffect(new PotionEffect(PotionEffectType.STRENGTH, 60, 0));
+                }
+                case "viking" -> {
+                    player.addPotionEffect(new PotionEffect(PotionEffectType.STRENGTH, 60, 0));
+                    player.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 60, 0));
+                }
+                case "gladiator" -> {
+                    player.addPotionEffect(new PotionEffect(PotionEffectType.RESISTANCE, 60, 0));
+                    player.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 60, 0));
+                }
                 default -> { }
             }
         }

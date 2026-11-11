@@ -80,6 +80,48 @@ public final class GawharaItemsCommand implements TabExecutor {
             return true;
         }
 
+        if (args[0].equalsIgnoreCase("bundle")) {
+            if (!sender.hasPermission("gawharaitems.admin")) {
+                sender.sendMessage(ChatColor.RED + "You do not have permission.");
+                return true;
+            }
+            if (args.length < 3) {
+                sender.sendMessage(ChatColor.YELLOW + "Usage: /gitems bundle <player> <armor_set>");
+                sender.sendMessage(ChatColor.GRAY + "Sets: " + String.join(", ", armorBundleIds()));
+                return true;
+            }
+
+            Player target = Bukkit.getPlayerExact(args[1]);
+            if (target == null) {
+                sender.sendMessage(ChatColor.RED + "That player is not online.");
+                return true;
+            }
+
+            String setId = args[2].toLowerCase();
+            List<ItemType> armorPieces = Arrays.stream(ItemType.values())
+                    .filter(ItemType::isArmorPiece)
+                    .filter(type -> setId.equals(type.getArmorSet()))
+                    .toList();
+            ItemType signatureWeapon = ItemType.bundleWeapon(setId);
+            ItemType bundleTool = ItemType.bundleTool(setId);
+            if (armorPieces.size() != 4 || signatureWeapon == null || bundleTool == null) {
+                sender.sendMessage(ChatColor.RED + "Unknown armor bundle. Available: "
+                        + String.join(", ", armorBundleIds()));
+                return true;
+            }
+
+            for (ItemType type : armorPieces) giveItem(target, type);
+            giveItem(target, signatureWeapon);
+            giveItem(target, bundleTool);
+            String prefix = ChatColor.translateAlternateColorCodes('&',
+                    plugin.getConfig().getString("settings.prefix", "&bGawharaItems &8» "));
+            sender.sendMessage(prefix + ChatColor.GREEN + "Gave the " + setId
+                    + " armor bundle, signature weapon and matching tool to " + target.getName() + ".");
+            target.sendMessage(prefix + ChatColor.GREEN + "You received the " + setId
+                    + " armor bundle, signature weapon and matching tool.");
+            return true;
+        }
+
         if (args[0].equalsIgnoreCase("give")) {
             if (!sender.hasPermission("gawharaitems.admin")) {
                 sender.sendMessage(ChatColor.RED + "You do not have permission.");
@@ -133,7 +175,7 @@ public final class GawharaItemsCommand implements TabExecutor {
             return true;
         }
 
-        sender.sendMessage(ChatColor.YELLOW + "Usage: /gitems [menu|pack|list|give|reload]");
+        sender.sendMessage(ChatColor.YELLOW + "Usage: /gitems [menu|pack|list|give|bundle|reload]");
         return true;
     }
 
@@ -141,11 +183,11 @@ public final class GawharaItemsCommand implements TabExecutor {
     public List<String> onTabComplete(CommandSender sender, Command command,
                                       String alias, String[] args) {
         if (args.length == 1) {
-            return List.of("menu", "pack", "list", "give", "reload").stream()
+            return List.of("menu", "pack", "list", "give", "bundle", "reload").stream()
                     .filter(value -> value.startsWith(args[0].toLowerCase()))
                     .toList();
         }
-        if (args.length == 2 && args[0].equalsIgnoreCase("give")) {
+        if (args.length == 2 && (args[0].equalsIgnoreCase("give") || args[0].equalsIgnoreCase("bundle"))) {
             return Bukkit.getOnlinePlayers().stream()
                     .map(Player::getName)
                     .filter(name -> name.toLowerCase().startsWith(args[1].toLowerCase()))
@@ -157,6 +199,26 @@ public final class GawharaItemsCommand implements TabExecutor {
                     .filter(id -> id.startsWith(args[2].toLowerCase()))
                     .toList();
         }
+        if (args.length == 3 && args[0].equalsIgnoreCase("bundle")) {
+            return armorBundleIds().stream()
+                    .filter(id -> id.startsWith(args[2].toLowerCase()))
+                    .toList();
+        }
         return List.of();
+    }
+
+    private List<String> armorBundleIds() {
+        return Arrays.stream(ItemType.values())
+                .filter(ItemType::isArmorPiece)
+                .map(ItemType::getArmorSet)
+                .distinct()
+                .toList();
+    }
+
+    private void giveItem(Player target, ItemType type) {
+        ItemStack item = itemFactory.create(type);
+        var leftovers = target.getInventory().addItem(item);
+        leftovers.values().forEach(leftover ->
+                target.getWorld().dropItemNaturally(target.getLocation(), leftover));
     }
 }

@@ -1,49 +1,38 @@
-رفع GawharaItems 1.1.4 على GitHub
+تثبيت GawharaItems 1.2.0 — نسخة Medieval War Armory
 
-تنبيه بخصوص Aternos:
-Aternos لا يسمح برفع ملفات Java Plugin JAR مخصصة من خارج مكتبته، ولا يوفر وصول FTP أو صلاحية رفع كاملة لملفات الإضافات. لذلك لن تستطيع تثبيت GawharaItems-1.1.4.jar على Aternos بمجرد رفعه. تحتاج استضافة تسمح بإضافات Paper مخصصة مثل exaroton، أو قبول الإضافة في مكتبة Aternos. رفع Resource Pack للـJava مسموح من صفحة Resource Packs، لكنه لا يثبت الإضافة نفسها.
+1) بناء إضافة السيرفر (JAR)
+- فك ضغط GawharaItems-Source-Custom-1_2_0-Medieval-Edition.zip.
+- ارفع محتويات مجلد GawharaItems إلى جذر مستودع GitHub بحيث يظهر build.gradle في الجذر.
+- افتح Actions وشغّل Build GawharaItems.
+- حمّل Artifact باسم GawharaItems-JAR، ثم ضع ملف JAR الناتج داخل plugins وأعد تشغيل السيرفر.
+- البناء يتطلب JDK 25. لا تستخدم JDK 21 لبناء هذه النسخة.
 
-1) فك ضغط GawharaItems-Source-Custom.zip.
-2) ارفع محتويات مجلد GawharaItems إلى جذر مستودع GitHub (بحيث يظهر build.gradle في الجذر).
-3) افتح Actions وانتظر نجاح Build GawharaItems.
-4) حمّل artifact باسم GawharaItems-JAR واستخرج GawharaItems-1.1.4.jar.
-5) ارفع JAR إلى plugins في السيرفر وأعد تشغيله بالكامل.
+2) Java Resource Pack
+- ارفع resourcepack-java-26.3.zip كما هو على رابط HTTPS مباشر.
+- قيمة SHA-1 الحالية داخل config.yml:
+dfe6e82c11d3950ba8beca7b3c0919352b7a105b
+- رابط GitHub Raw مضبوط في config.yml من النسخة السابقة؛ بعد رفع الملف الجديد للمستودع سيشير للرابط نفسه.
+- بعد استبدال الملف، أعد تشغيل السيرفر أو استخدم /gitems reload. اللاعبون لازم يقبلوا الحزمة.
 
-الأوامر:
-/gitems
+3) Bedrock عبر Geyser
+- أوقف السيرفر.
+- في plugins/Geyser-Spigot/packs احذف حزم GawharaItems القديمة وضع:
+  GawharaItems-Geyser-Bedrock-1.2.0.mcpack
+- في plugins/Geyser-Spigot/custom_mappings احذف ملف mappings القديم وضع:
+  gawharaitems_mappings-1.2.0.json
+- تأكد من enable-custom-content: true.
+- أعد تشغيل Geyser والسيرفر بالكامل.
+- لو Bedrock استمر يعرض الخامات القديمة، امسح Server Resource Pack Cache من إعدادات اللعبة ثم أعد الاتصال.
+
+4) أوامر الإدارة
 /gitems list
 /gitems give <player> <item_id> [amount]
+/gitems bundle <player> <set>
 /gitems reload
+/gpack
 
-موديلات Java:
-- استخدم مجلد resourcepack-java-26.3 كـ Resource Pack. اضغط محتوياته إلى ZIP مع pack.mcmeta في جذر ZIP ثم ثبّته عند لاعبي Java أو استضفه كرابط HTTPS ليتم فرضه من إعدادات السيرفر.
+الأطقم المتاحة مع أمر bundle:
+shadow, royal, dragon, demon, ice, angel, warrior, viking, gladiator
 
-Geyser / Bedrock:
-- تأكد من enable-custom-content: true في إعدادات Geyser.
-- على Aternos تأكد أولًا من إمكانية الكتابة داخل مجلدي custom_mappings وpacks الخاصين بـGeyser؛ قد لا توفر لوحة الاستضافة وصولًا كاملًا لهما.
-- انسخ geyser-bedrock-pack/gawharaitems_mappings.json إلى مجلد custom_mappings في Geyser.
-- اضغط محتويات geyser-bedrock-pack في ملف MCpack بحيث يكون manifest.json في جذر الحزمة، وضعه داخل مجلد packs في Geyser.
-- أعد تشغيل Geyser والسيرفر.
-
-مهم: إضافة Paper تعمل للاعبي Java وBedrock، لكن الموديلات المخصصة لعميل Bedrock تتطلب ملفات Geyser المنفصلة. بعض لوحات الاستضافة قد لا تسمح بالوصول إلى مجلدات Geyser؛ يجب التأكد من إمكانية رفع الملفات.
-
-
-تفعيل تحميل Resource Pack تلقائيًا للاعبي Java (الإصدار 1.1.3):
-1) ارفع الملف resourcepack-java-26.3.zip الموجود في جذر المشروع إلى استضافة ملفات تعطي رابط HTTPS مباشرًا (يمكن استخدام GitHub Releases).
-2) الرابط المباشر لمستودع DRAGON223331/GawharaItems مضبوط مسبقًا في الإعدادات. بعد رفع النسخة الجديدة إلى main سيشير إلى الحزمة الجديدة.
-3) اترك resource-pack.sha1 كما هو إذا رفعت الملف دون تعديل. إذا أعدت ضغط الحزمة، احسب SHA-1 من الملف الجديد واستبدل القيمة.
-4) أعد تشغيل السيرفر أو نفّذ /gitems reload. سيظهر طلب تحميل الحزمة عند دخول اللاعب. ويمكن للاعب إعادة طلبها بالأمر /gitems pack.
-5) resource-pack.required: false يسمح للاعب بالرفض. غيّرها إلى true لجعل الحزمة مطلوبة.
-مهم: البلاجن لا يستطيع إنشاء رابط تنزيل عام من تلقاء نفسه؛ يجب استضافة ملف ZIP على رابط HTTPS مباشر يمكن للاعبين الوصول إليه.
-
-
-التحديث المرئي 1.1.2: تم تحسين أيقونات السيوف والدروع إلى 64x64، وإعادة رسم خامات الدروع الملبوسة على خريطة UV القياسية 64x32 لكل من Java وBedrock.
-
-
-إصلاح خامات دروع Bedrock في 1.1.3:
-- استبدل حزمة Geyser القديمة داخل مجلد packs بالحزمة الجديدة GawharaItems-Geyser-Bedrock-1.1.4.mcpack.
-- الحزمة الجديدة تتضمن خامات الارتداء المفقودة في textures/entity/equipment/humanoid وtextures/entity/equipment/humanoid_leggings؛ وهي الملفات التي كانت تسبب اللون الوردي عند ارتداء الدروع على Bedrock.
-- استبدل ملف gawharaitems_mappings.json في custom_mappings بالملف المرفق إن تغير لديك، ثم أعد تشغيل Geyser والسيرفر.
-- على جهاز Bedrock امسح حزمة GawharaSMP القديمة من Cached Data/Storage ثم أعد الاتصال حتى لا يستعمل العميل النسخة القديمة.
-
-إصلاح ظهور جلد الشخصية من خلال الدرع في 1.1.4: تمت إضافة parent_setup لكل من helmet/chestplate/leggings/boots داخل ملفات attachables لإخفاء طبقة الجلد الأصلية تحت قطعة الدرع. استبدل MCpack القديم، وأعد تشغيل Geyser، ثم امسح النسخة المخزنة مؤقتًا من إعدادات Resource Packs على عميل Bedrock وأعد الدخول.
+ملاحظة الاستضافة:
+الإضافة نفسها تحتاج Paper Plugin مخصص. بعض الاستضافات المجانية لا تسمح برفع JAR مخصص أو الوصول إلى مجلدات Geyser (packs وcustom_mappings)، حتى لو كان رفع Resource Pack عادي ممكنًا.
