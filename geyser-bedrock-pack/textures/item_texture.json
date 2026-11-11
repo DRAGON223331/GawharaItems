@@ -2,6 +2,91 @@
   "resource_pack_name": "GawharaSMP_CustomItems",
   "texture_name": "atlas.items",
   "texture_data": {
+    "gawharaitems.angel_boots": {
+      "textures": [
+        "textures/items/angel_boots"
+      ]
+    },
+    "gawharaitems.angel_chestplate": {
+      "textures": [
+        "textures/items/angel_chestplate"
+      ]
+    },
+    "gawharaitems.angel_helmet": {
+      "textures": [
+        "textures/items/angel_helmet"
+      ]
+    },
+    "gawharaitems.angel_leggings": {
+      "textures": [
+        "textures/items/angel_leggings"
+      ]
+    },
+    "gawharaitems.angel_weapon": {
+      "textures": [
+        "textures/items/angel_weapon"
+      ]
+    },
+    "gawharaitems.battle_spear": {
+      "textures": [
+        "textures/items/battle_spear"
+      ]
+    },
+    "gawharaitems.demon_boots": {
+      "textures": [
+        "textures/items/demon_boots"
+      ]
+    },
+    "gawharaitems.demon_chestplate": {
+      "textures": [
+        "textures/items/demon_chestplate"
+      ]
+    },
+    "gawharaitems.demon_helmet": {
+      "textures": [
+        "textures/items/demon_helmet"
+      ]
+    },
+    "gawharaitems.demon_leggings": {
+      "textures": [
+        "textures/items/demon_leggings"
+      ]
+    },
+    "gawharaitems.demon_weapon": {
+      "textures": [
+        "textures/items/demon_weapon"
+      ]
+    },
+    "gawharaitems.dragon_blade": {
+      "textures": [
+        "textures/items/dragon_blade"
+      ]
+    },
+    "gawharaitems.dragon_boots": {
+      "textures": [
+        "textures/items/dragon_boots"
+      ]
+    },
+    "gawharaitems.dragon_chestplate": {
+      "textures": [
+        "textures/items/dragon_chestplate"
+      ]
+    },
+    "gawharaitems.dragon_helmet": {
+      "textures": [
+        "textures/items/dragon_helmet"
+      ]
+    },
+    "gawharaitems.dragon_leggings": {
+      "textures": [
+        "textures/items/dragon_leggings"
+      ]
+    },
+    "gawharaitems.dragon_weapon": {
+      "textures": [
+        "textures/items/dragon_weapon"
+      ]
+    },
     "gawharaitems.flame_blade": {
       "textures": [
         "textures/items/flame_blade"
@@ -12,129 +97,34 @@
         "textures/items/frost_blade"
       ]
     },
-    "gawharaitems.lightning_blade": {
+    "gawharaitems.gladiator_boots": {
       "textures": [
-        "textures/items/lightning_blade"
+        "textures/items/gladiator_boots"
       ]
     },
-    "gawharaitems.shadow_blade": {
+    "gawharaitems.gladiator_chestplate": {
       "textures": [
-        "textures/items/shadow_blade"
+        "textures/items/gladiator_chestplate"
       ]
     },
-    "gawharaitems.venom_blade": {
+    "gawharaitems.gladiator_helmet": {
       "textures": [
-        "textures/items/venom_blade"
+        "textures/items/gladiator_helmet"
       ]
     },
-    "gawharaitems.vital_blade": {
+    "gawharaitems.gladiator_leggings": {
       "textures": [
-        "textures/items/vital_blade"
+        "textures/items/gladiator_leggings"
       ]
     },
-    "gawharaitems.dragon_blade": {
+    "gawharaitems.gladiator_weapon": {
       "textures": [
-        "textures/items/dragon_blade"
+        "textures/items/gladiator_weapon"
       ]
     },
-    "gawharaitems.spirit_blade": {
+    "gawharaitems.hunter_crossbow": {
       "textures": [
-        "textures/items/spirit_blade"
-      ]
-    },
-    "gawharaitems.shadow_helmet": {
-      "textures": [
-        "textures/items/shadow_helmet"
-      ]
-    },
-    "gawharaitems.shadow_chestplate": {
-      "textures": [
-        "textures/items/shadow_chestplate"
-      ]
-    },
-    "gawharaitems.shadow_leggings": {
-      "textures": [
-        "textures/items/shadow_leggings"
-      ]
-    },
-    "gawharaitems.shadow_boots": {
-      "textures": [
-        "textures/items/shadow_boots"
-      ]
-    },
-    "gawharaitems.royal_helmet": {
-      "textures": [
-        "textures/items/royal_helmet"
-      ]
-    },
-    "gawharaitems.royal_chestplate": {
-      "textures": [
-        "textures/items/royal_chestplate"
-      ]
-    },
-    "gawharaitems.royal_leggings": {
-      "textures": [
-        "textures/items/royal_leggings"
-      ]
-    },
-    "gawharaitems.royal_boots": {
-      "textures": [
-        "textures/items/royal_boots"
-      ]
-    },
-    "gawharaitems.dragon_helmet": {
-      "textures": [
-        "textures/items/dragon_helmet"
-      ]
-    },
-    "gawharaitems.dragon_chestplate": {
-      "textures": [
-        "textures/items/dragon_chestplate"
-      ]
-    },
-    "gawharaitems.dragon_leggings": {
-      "textures": [
-        "textures/items/dragon_leggings"
-      ]
-    },
-    "gawharaitems.dragon_boots": {
-      "textures": [
-        "textures/items/dragon_boots"
-      ]
-    },
-    "gawharaitems.demon_helmet": {
-      "textures": [
-        "textures/items/demon_helmet"
-      ]
-    },
-    "gawharaitems.demon_chestplate": {
-      "textures": [
-        "textures/items/demon_chestplate"
-      ]
-    },
-    "gawharaitems.demon_leggings": {
-      "textures": [
-        "textures/items/demon_leggings"
-      ]
-    },
-    "gawharaitems.demon_boots": {
-      "textures": [
-        "textures/items/demon_boots"
-      ]
-    },
-    "gawharaitems.ice_helmet": {
-      "textures": [
-        "textures/items/ice_helmet"
-      ]
-    },
-    "gawharaitems.ice_chestplate": {
-      "textures": [
-        "textures/items/ice_chestplate"
-      ]
-    },
-    "gawharaitems.ice_leggings": {
-      "textures": [
-        "textures/items/ice_leggings"
+        "textures/items/hunter_crossbow"
       ]
     },
     "gawharaitems.ice_boots": {
@@ -142,24 +132,209 @@
         "textures/items/ice_boots"
       ]
     },
-    "gawharaitems.angel_helmet": {
+    "gawharaitems.ice_chestplate": {
       "textures": [
-        "textures/items/angel_helmet"
+        "textures/items/ice_chestplate"
       ]
     },
-    "gawharaitems.angel_chestplate": {
+    "gawharaitems.ice_helmet": {
       "textures": [
-        "textures/items/angel_chestplate"
+        "textures/items/ice_helmet"
       ]
     },
-    "gawharaitems.angel_leggings": {
+    "gawharaitems.ice_leggings": {
       "textures": [
-        "textures/items/angel_leggings"
+        "textures/items/ice_leggings"
       ]
     },
-    "gawharaitems.angel_boots": {
+    "gawharaitems.ice_weapon": {
       "textures": [
-        "textures/items/angel_boots"
+        "textures/items/ice_weapon"
+      ]
+    },
+    "gawharaitems.lightning_blade": {
+      "textures": [
+        "textures/items/lightning_blade"
+      ]
+    },
+    "gawharaitems.lumber_axe": {
+      "textures": [
+        "textures/items/lumber_axe"
+      ]
+    },
+    "gawharaitems.miner_pickaxe": {
+      "textures": [
+        "textures/items/miner_pickaxe"
+      ]
+    },
+    "gawharaitems.royal_boots": {
+      "textures": [
+        "textures/items/royal_boots"
+      ]
+    },
+    "gawharaitems.royal_chestplate": {
+      "textures": [
+        "textures/items/royal_chestplate"
+      ]
+    },
+    "gawharaitems.royal_helmet": {
+      "textures": [
+        "textures/items/royal_helmet"
+      ]
+    },
+    "gawharaitems.royal_leggings": {
+      "textures": [
+        "textures/items/royal_leggings"
+      ]
+    },
+    "gawharaitems.royal_weapon": {
+      "textures": [
+        "textures/items/royal_weapon"
+      ]
+    },
+    "gawharaitems.shadow_blade": {
+      "textures": [
+        "textures/items/shadow_blade"
+      ]
+    },
+    "gawharaitems.shadow_boots": {
+      "textures": [
+        "textures/items/shadow_boots"
+      ]
+    },
+    "gawharaitems.shadow_chestplate": {
+      "textures": [
+        "textures/items/shadow_chestplate"
+      ]
+    },
+    "gawharaitems.shadow_helmet": {
+      "textures": [
+        "textures/items/shadow_helmet"
+      ]
+    },
+    "gawharaitems.shadow_leggings": {
+      "textures": [
+        "textures/items/shadow_leggings"
+      ]
+    },
+    "gawharaitems.shadow_weapon": {
+      "textures": [
+        "textures/items/shadow_weapon"
+      ]
+    },
+    "gawharaitems.spirit_blade": {
+      "textures": [
+        "textures/items/spirit_blade"
+      ]
+    },
+    "gawharaitems.venom_blade": {
+      "textures": [
+        "textures/items/venom_blade"
+      ]
+    },
+    "gawharaitems.viking_boots": {
+      "textures": [
+        "textures/items/viking_boots"
+      ]
+    },
+    "gawharaitems.viking_chestplate": {
+      "textures": [
+        "textures/items/viking_chestplate"
+      ]
+    },
+    "gawharaitems.viking_helmet": {
+      "textures": [
+        "textures/items/viking_helmet"
+      ]
+    },
+    "gawharaitems.viking_leggings": {
+      "textures": [
+        "textures/items/viking_leggings"
+      ]
+    },
+    "gawharaitems.viking_weapon": {
+      "textures": [
+        "textures/items/viking_weapon"
+      ]
+    },
+    "gawharaitems.vital_blade": {
+      "textures": [
+        "textures/items/vital_blade"
+      ]
+    },
+    "gawharaitems.war_hammer": {
+      "textures": [
+        "textures/items/war_hammer"
+      ]
+    },
+    "gawharaitems.warrior_boots": {
+      "textures": [
+        "textures/items/warrior_boots"
+      ]
+    },
+    "gawharaitems.warrior_chestplate": {
+      "textures": [
+        "textures/items/warrior_chestplate"
+      ]
+    },
+    "gawharaitems.warrior_helmet": {
+      "textures": [
+        "textures/items/warrior_helmet"
+      ]
+    },
+    "gawharaitems.warrior_leggings": {
+      "textures": [
+        "textures/items/warrior_leggings"
+      ]
+    },
+    "gawharaitems.warrior_weapon": {
+      "textures": [
+        "textures/items/warrior_weapon"
+      ]
+    },
+    "gawharaitems.shadow_tool": {
+      "textures": [
+        "textures/items/shadow_tool"
+      ]
+    },
+    "gawharaitems.royal_tool": {
+      "textures": [
+        "textures/items/royal_tool"
+      ]
+    },
+    "gawharaitems.dragon_tool": {
+      "textures": [
+        "textures/items/dragon_tool"
+      ]
+    },
+    "gawharaitems.demon_tool": {
+      "textures": [
+        "textures/items/demon_tool"
+      ]
+    },
+    "gawharaitems.ice_tool": {
+      "textures": [
+        "textures/items/ice_tool"
+      ]
+    },
+    "gawharaitems.angel_tool": {
+      "textures": [
+        "textures/items/angel_tool"
+      ]
+    },
+    "gawharaitems.warrior_tool": {
+      "textures": [
+        "textures/items/warrior_tool"
+      ]
+    },
+    "gawharaitems.viking_tool": {
+      "textures": [
+        "textures/items/viking_tool"
+      ]
+    },
+    "gawharaitems.gladiator_tool": {
+      "textures": [
+        "textures/items/gladiator_tool"
       ]
     }
   }
