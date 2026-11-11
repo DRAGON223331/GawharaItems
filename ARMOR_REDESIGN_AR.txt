@@ -1,0 +1,19 @@
+GawharaItems 1.1.7 - إعادة تصميم خامات الدروع
+- الخامات اتعمل لها رسم جديد على تخطيط دروع ماينكرافت الأصلي (64x32): خوذة بفتحة وجه، صدرية بأكتاف وحزام، بنطلون بركبة، وبوتس.
+- كل طقم له لون وشعار مميز: Shadow هلال، Royal تاج، Dragon لهب، Demon قرون، Ice ندفة ثلج، Angel صليب نوراني.
+- نفس الخامات اتطبقت على Java وBedrock.
+- SHA-1 الجديد للـ ZIP: f9f3f151e5bdedc6664259de7df80c364f1aef2d
+
+التركيب على Java:
+1) ارفع resourcepack-java-26.3.zip على نفس رابط GitHub Raw (من غير ما تفتحه أو تعدل فيه).
+2) عدّل sha1 في plugins/GawharaItems/config.yml بالقيمة الجديدة.
+3) /gitems reload، ثم اخرج وادخل ووافق على الـ pack.
+اللاعبين التانيين لازم يكونوا قبلوا الـ resource pack عشان يشوفوا الدروع.
+
+التركيب على Bedrock (Geyser):
+احذف نسخ GawharaItems القديمة من plugins/Geyser-Spigot/packs وحط GawharaItems-Geyser-Bedrock-1.1.7.mcpack،
+وحط gawharaitems_mappings-1.1.7.json في custom_mappings بدل القديم، وأعد تشغيل السيرفر.
+
+أمر جديد للاعبين: /gpack (أو /pack) لإعادة طلب الـ resource pack لو رفضه اللاعب.
+لو ما ظهرتش رسالة التحميل: من قائمة السيرفرات اضغط Edit على السيرفر وخلّي Server Resource Packs = Enabled.
+هذا التعديل داخل كود الـ JAR، فلازم تبني JAR جديد (GitHub Actions) وتستبدله في plugins.

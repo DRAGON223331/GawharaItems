@@ -25,6 +25,16 @@ public final class GawharaItemsCommand implements TabExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        // /gpack (aliases: /pack, /gawharapack) lets any player request the resource pack again.
+        if (command.getName().equalsIgnoreCase("gpack")) {
+            if (!(sender instanceof Player player)) {
+                sender.sendMessage(ChatColor.RED + "Only players can request the resource pack.");
+                return true;
+            }
+            resourcePackManager.send(player, true);
+            return true;
+        }
+
         if (args.length == 0 || args[0].equalsIgnoreCase("menu")) {
             if (!(sender instanceof Player player)) {
                 sender.sendMessage(ChatColor.RED + "Only players can open the item menu.");

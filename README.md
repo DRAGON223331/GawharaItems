@@ -1,4 +1,4 @@
-# GawharaItems 1.1.6
+# GawharaItems 1.1.7
 
 Custom tools, elemental swords, and six custom armor sets for GawharaSMP. Targets Paper 26.3 and Java 25.
 
@@ -9,8 +9,8 @@ Custom tools, elemental swords, and six custom armor sets for GawharaSMP. Target
 - Keeps all 24 armor pieces across Shadow, Royal, Dragon, Demon, Ice, and Angel sets.
 
 ## Geyser installation
-1. Stop the server. In `plugins/Geyser-Spigot/packs/`, remove older GawharaItems `.mcpack` / `.zip` files and leave only the new `GawharaItems-Geyser-Bedrock-1.1.6.mcpack`.
-2. In `plugins/Geyser-Spigot/custom_mappings/`, remove older `gawharaitems_mappings-*.json` files and place only `gawharaitems_mappings-1.1.6.json`.
+1. Stop the server. In `plugins/Geyser-Spigot/packs/`, remove older GawharaItems `.mcpack` / `.zip` files and leave only the new `GawharaItems-Geyser-Bedrock-1.1.7.mcpack`.
+2. In `plugins/Geyser-Spigot/custom_mappings/`, remove older `gawharaitems_mappings-*.json` files and place only `gawharaitems_mappings-1.1.7.json`.
 3. Set `enable-custom-content: true` in Geyser config.
 4. Fully restart the server/Geyser.
 5. Bedrock players should clear the old server pack cache if a previous version remains.

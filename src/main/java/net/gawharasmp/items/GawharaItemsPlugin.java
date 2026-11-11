@@ -30,6 +30,11 @@ public final class GawharaItemsPlugin extends JavaPlugin {
         command.setExecutor(executor);
         command.setTabCompleter(executor);
 
+        PluginCommand packCommand = getCommand("gpack");
+        if (packCommand != null) {
+            packCommand.setExecutor(executor);
+        }
+
         getLogger().info("GawharaItems enabled. Loaded "
                 + ItemType.values().length + " custom item types.");
         String resourcePackUrl = getConfig().getString("resource-pack.url", "");

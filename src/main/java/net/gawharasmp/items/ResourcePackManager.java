@@ -83,7 +83,10 @@ public final class ResourcePackManager implements Listener {
 
         try {
             player.setResourcePack(url, sha1, required, promptComponent);
-            if (notifyPlayer) player.sendMessage(prefix() + ChatColor.GREEN + "Resource-pack request sent. Check the prompt in Minecraft.");
+            if (notifyPlayer) {
+                player.sendMessage(prefix() + ChatColor.GREEN + "Resource-pack request sent. Check the prompt in Minecraft.");
+                player.sendMessage(prefix() + ChatColor.GRAY + "No prompt? In the server list choose Edit on this server and set Server Resource Packs to Enabled or Prompt.");
+            }
             return true;
         } catch (IllegalArgumentException exception) {
             plugin.getLogger().warning("Could not send resource pack to " + player.getName() + ": " + exception.getMessage());
