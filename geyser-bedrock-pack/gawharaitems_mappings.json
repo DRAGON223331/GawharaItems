@@ -78,6 +78,39 @@
           "creative_category": "items",
           "display_handheld": true
         }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:shadow_weapon",
+        "bedrock_identifier": "gawharaitems:shadow_weapon",
+        "display_name": "Shadow Daggers",
+        "bedrock_options": {
+          "icon": "gawharaitems.shadow_weapon",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:dragon_weapon",
+        "bedrock_identifier": "gawharaitems:dragon_weapon",
+        "display_name": "Dragon Greatsword",
+        "bedrock_options": {
+          "icon": "gawharaitems.dragon_weapon",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:gladiator_weapon",
+        "bedrock_identifier": "gawharaitems:gladiator_weapon",
+        "display_name": "Gladiator Gladius",
+        "bedrock_options": {
+          "icon": "gawharaitems.gladiator_weapon",
+          "creative_category": "items",
+          "display_handheld": true
+        }
       }
     ],
     "minecraft:diamond_sword": [
@@ -195,6 +228,57 @@
           },
           "minecraft:max_stack_size": 1
         }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:warrior_helmet",
+        "bedrock_identifier": "gawharaitems:warrior_helmet",
+        "display_name": "Warrior Helmet",
+        "bedrock_options": {
+          "icon": "gawharaitems.warrior_helmet",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head"
+          },
+          "minecraft:max_stack_size": 1
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:viking_helmet",
+        "bedrock_identifier": "gawharaitems:viking_helmet",
+        "display_name": "Viking Helmet",
+        "bedrock_options": {
+          "icon": "gawharaitems.viking_helmet",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head"
+          },
+          "minecraft:max_stack_size": 1
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:gladiator_helmet",
+        "bedrock_identifier": "gawharaitems:gladiator_helmet",
+        "display_name": "Gladiator Helmet",
+        "bedrock_options": {
+          "icon": "gawharaitems.gladiator_helmet",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head"
+          },
+          "minecraft:max_stack_size": 1
+        }
       }
     ],
     "minecraft:netherite_chestplate": [
@@ -290,6 +374,57 @@
         "display_name": "Angel Chestplate",
         "bedrock_options": {
           "icon": "gawharaitems.angel_chestplate",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "chest"
+          },
+          "minecraft:max_stack_size": 1
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:warrior_chestplate",
+        "bedrock_identifier": "gawharaitems:warrior_chestplate",
+        "display_name": "Warrior Chestplate",
+        "bedrock_options": {
+          "icon": "gawharaitems.warrior_chestplate",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "chest"
+          },
+          "minecraft:max_stack_size": 1
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:viking_chestplate",
+        "bedrock_identifier": "gawharaitems:viking_chestplate",
+        "display_name": "Viking Chestplate",
+        "bedrock_options": {
+          "icon": "gawharaitems.viking_chestplate",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "chest"
+          },
+          "minecraft:max_stack_size": 1
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:gladiator_chestplate",
+        "bedrock_identifier": "gawharaitems:gladiator_chestplate",
+        "display_name": "Gladiator Chestplate",
+        "bedrock_options": {
+          "icon": "gawharaitems.gladiator_chestplate",
           "creative_category": "equipment",
           "protection_value": 4
         },
@@ -403,6 +538,57 @@
           },
           "minecraft:max_stack_size": 1
         }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:warrior_leggings",
+        "bedrock_identifier": "gawharaitems:warrior_leggings",
+        "display_name": "Warrior Leggings",
+        "bedrock_options": {
+          "icon": "gawharaitems.warrior_leggings",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "legs"
+          },
+          "minecraft:max_stack_size": 1
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:viking_leggings",
+        "bedrock_identifier": "gawharaitems:viking_leggings",
+        "display_name": "Viking Leggings",
+        "bedrock_options": {
+          "icon": "gawharaitems.viking_leggings",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "legs"
+          },
+          "minecraft:max_stack_size": 1
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:gladiator_leggings",
+        "bedrock_identifier": "gawharaitems:gladiator_leggings",
+        "display_name": "Gladiator Leggings",
+        "bedrock_options": {
+          "icon": "gawharaitems.gladiator_leggings",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "legs"
+          },
+          "minecraft:max_stack_size": 1
+        }
       }
     ],
     "minecraft:netherite_boots": [
@@ -506,6 +692,289 @@
             "slot": "feet"
           },
           "minecraft:max_stack_size": 1
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:warrior_boots",
+        "bedrock_identifier": "gawharaitems:warrior_boots",
+        "display_name": "Warrior Boots",
+        "bedrock_options": {
+          "icon": "gawharaitems.warrior_boots",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "feet"
+          },
+          "minecraft:max_stack_size": 1
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:viking_boots",
+        "bedrock_identifier": "gawharaitems:viking_boots",
+        "display_name": "Viking Boots",
+        "bedrock_options": {
+          "icon": "gawharaitems.viking_boots",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "feet"
+          },
+          "minecraft:max_stack_size": 1
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:gladiator_boots",
+        "bedrock_identifier": "gawharaitems:gladiator_boots",
+        "display_name": "Gladiator Boots",
+        "bedrock_options": {
+          "icon": "gawharaitems.gladiator_boots",
+          "creative_category": "equipment",
+          "protection_value": 4
+        },
+        "components": {
+          "minecraft:equippable": {
+            "slot": "feet"
+          },
+          "minecraft:max_stack_size": 1
+        }
+      }
+    ],
+    "minecraft:netherite_axe": [
+      {
+        "type": "definition",
+        "model": "gawharaitems:royal_weapon",
+        "bedrock_identifier": "gawharaitems:royal_weapon",
+        "display_name": "Royal War Axe",
+        "bedrock_options": {
+          "icon": "gawharaitems.royal_weapon",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:demon_weapon",
+        "bedrock_identifier": "gawharaitems:demon_weapon",
+        "display_name": "Demon War Mace",
+        "bedrock_options": {
+          "icon": "gawharaitems.demon_weapon",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:warrior_weapon",
+        "bedrock_identifier": "gawharaitems:warrior_weapon",
+        "display_name": "Warrior Battleaxe",
+        "bedrock_options": {
+          "icon": "gawharaitems.warrior_weapon",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:viking_weapon",
+        "bedrock_identifier": "gawharaitems:viking_weapon",
+        "display_name": "Viking Warhammer",
+        "bedrock_options": {
+          "icon": "gawharaitems.viking_weapon",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:war_hammer",
+        "bedrock_identifier": "gawharaitems:war_hammer",
+        "display_name": "War Hammer",
+        "bedrock_options": {
+          "icon": "gawharaitems.war_hammer",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      }
+    ],
+    "minecraft:trident": [
+      {
+        "type": "definition",
+        "model": "gawharaitems:ice_weapon",
+        "bedrock_identifier": "gawharaitems:ice_weapon",
+        "display_name": "Frost Spear",
+        "bedrock_options": {
+          "icon": "gawharaitems.ice_weapon",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:angel_weapon",
+        "bedrock_identifier": "gawharaitems:angel_weapon",
+        "display_name": "Angel Lance",
+        "bedrock_options": {
+          "icon": "gawharaitems.angel_weapon",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:battle_spear",
+        "bedrock_identifier": "gawharaitems:battle_spear",
+        "display_name": "Battle Spear",
+        "bedrock_options": {
+          "icon": "gawharaitems.battle_spear",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      }
+    ],
+    "minecraft:crossbow": [
+      {
+        "type": "definition",
+        "model": "gawharaitems:hunter_crossbow",
+        "bedrock_identifier": "gawharaitems:hunter_crossbow",
+        "display_name": "Hunter Crossbow",
+        "bedrock_options": {
+          "icon": "gawharaitems.hunter_crossbow",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      }
+    ],
+    "minecraft:diamond_pickaxe": [
+      {
+        "type": "definition",
+        "model": "gawharaitems:miner_pickaxe",
+        "bedrock_identifier": "gawharaitems:miner_pickaxe",
+        "display_name": "Miner War Pickaxe",
+        "bedrock_options": {
+          "icon": "gawharaitems.miner_pickaxe",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      }
+    ],
+    "minecraft:diamond_axe": [
+      {
+        "type": "definition",
+        "model": "gawharaitems:lumber_axe",
+        "bedrock_identifier": "gawharaitems:lumber_axe",
+        "display_name": "Lumber War Axe",
+        "bedrock_options": {
+          "icon": "gawharaitems.lumber_axe",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      }
+    ],
+    "minecraft:netherite_pickaxe": [
+      {
+        "type": "definition",
+        "model": "gawharaitems:shadow_tool",
+        "bedrock_identifier": "gawharaitems:shadow_tool",
+        "display_name": "Shadow Bundle Pickaxe",
+        "bedrock_options": {
+          "icon": "gawharaitems.shadow_tool",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:royal_tool",
+        "bedrock_identifier": "gawharaitems:royal_tool",
+        "display_name": "Royal Bundle Pickaxe",
+        "bedrock_options": {
+          "icon": "gawharaitems.royal_tool",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:dragon_tool",
+        "bedrock_identifier": "gawharaitems:dragon_tool",
+        "display_name": "Dragon Bundle Pickaxe",
+        "bedrock_options": {
+          "icon": "gawharaitems.dragon_tool",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:demon_tool",
+        "bedrock_identifier": "gawharaitems:demon_tool",
+        "display_name": "Demon Bundle Pickaxe",
+        "bedrock_options": {
+          "icon": "gawharaitems.demon_tool",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:ice_tool",
+        "bedrock_identifier": "gawharaitems:ice_tool",
+        "display_name": "Ice Bundle Pickaxe",
+        "bedrock_options": {
+          "icon": "gawharaitems.ice_tool",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:angel_tool",
+        "bedrock_identifier": "gawharaitems:angel_tool",
+        "display_name": "Angel Bundle Pickaxe",
+        "bedrock_options": {
+          "icon": "gawharaitems.angel_tool",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:warrior_tool",
+        "bedrock_identifier": "gawharaitems:warrior_tool",
+        "display_name": "Warrior Bundle Pickaxe",
+        "bedrock_options": {
+          "icon": "gawharaitems.warrior_tool",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:viking_tool",
+        "bedrock_identifier": "gawharaitems:viking_tool",
+        "display_name": "Viking Bundle Pickaxe",
+        "bedrock_options": {
+          "icon": "gawharaitems.viking_tool",
+          "creative_category": "items",
+          "display_handheld": true
+        }
+      },
+      {
+        "type": "definition",
+        "model": "gawharaitems:gladiator_tool",
+        "bedrock_identifier": "gawharaitems:gladiator_tool",
+        "display_name": "Gladiator Bundle Pickaxe",
+        "bedrock_options": {
+          "icon": "gawharaitems.gladiator_tool",
+          "creative_category": "items",
+          "display_handheld": true
         }
       }
     ]
