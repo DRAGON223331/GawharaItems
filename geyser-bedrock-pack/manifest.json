@@ -2,12 +2,12 @@
   "format_version": 2,
   "header": {
     "name": "GawharaSMP Custom Items",
-    "description": "GawharaSMP custom items; full unmasked vanilla-compatible armor UV atlases and attachables",
+    "description": "GawharaSMP custom items and redesigned armor",
     "uuid": "10ae8c62-9ef4-41de-95c4-7fe74b532425",
     "version": [
       1,
       1,
-      6
+      7
     ],
     "min_engine_version": [
       1,
@@ -22,7 +22,7 @@
       "version": [
         1,
         1,
-        6
+        7
       ]
     }
   ]
