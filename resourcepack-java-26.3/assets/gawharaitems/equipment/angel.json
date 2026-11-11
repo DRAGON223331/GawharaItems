@@ -1,14 +1,10 @@
 {
   "layers": {
     "humanoid": [
-      {
-        "texture": "gawharaitems:entity/equipment/humanoid/angel"
-      }
+      { "texture": "gawharaitems:angel" }
     ],
     "humanoid_leggings": [
-      {
-        "texture": "gawharaitems:entity/equipment/humanoid_leggings/angel"
-      }
+      { "texture": "gawharaitems:angel" }
     ]
   }
 }
