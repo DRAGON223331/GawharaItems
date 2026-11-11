@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "gawharaitems:gladiator"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "gawharaitems:gladiator"
+      }
+    ]
+  }
+}

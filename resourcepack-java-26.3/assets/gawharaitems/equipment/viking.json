@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "gawharaitems:viking"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "gawharaitems:viking"
+      }
+    ]
+  }
+}
