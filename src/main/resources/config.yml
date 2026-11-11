@@ -8,7 +8,7 @@ settings:
 resource-pack:
   enabled: true
   url: 'https://raw.githubusercontent.com/DRAGON223331/GawharaItems/main/resourcepack-java-26.3.zip'
-  sha1: 'f711d34d1a12526f8422448083d216c0b3a274a8'
+  sha1: 'fc811b7d89893974e924106b97ddd426ff1ee976'
   required: false
   join-delay-ticks: 40
   prompt: 'Download the GawharaSMP custom weapons and armor pack?'

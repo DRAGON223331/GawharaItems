@@ -1,12 +1,12 @@
-رفع GawharaItems 1.1.2 على GitHub
+رفع GawharaItems 1.1.4 على GitHub
 
 تنبيه بخصوص Aternos:
-Aternos لا يسمح برفع ملفات Java Plugin JAR مخصصة من خارج مكتبته، ولا يوفر وصول FTP أو صلاحية رفع كاملة لملفات الإضافات. لذلك لن تستطيع تثبيت GawharaItems-1.1.2.jar على Aternos بمجرد رفعه. تحتاج استضافة تسمح بإضافات Paper مخصصة مثل exaroton، أو قبول الإضافة في مكتبة Aternos. رفع Resource Pack للـJava مسموح من صفحة Resource Packs، لكنه لا يثبت الإضافة نفسها.
+Aternos لا يسمح برفع ملفات Java Plugin JAR مخصصة من خارج مكتبته، ولا يوفر وصول FTP أو صلاحية رفع كاملة لملفات الإضافات. لذلك لن تستطيع تثبيت GawharaItems-1.1.4.jar على Aternos بمجرد رفعه. تحتاج استضافة تسمح بإضافات Paper مخصصة مثل exaroton، أو قبول الإضافة في مكتبة Aternos. رفع Resource Pack للـJava مسموح من صفحة Resource Packs، لكنه لا يثبت الإضافة نفسها.
 
 1) فك ضغط GawharaItems-Source-Custom.zip.
 2) ارفع محتويات مجلد GawharaItems إلى جذر مستودع GitHub (بحيث يظهر build.gradle في الجذر).
 3) افتح Actions وانتظر نجاح Build GawharaItems.
-4) حمّل artifact باسم GawharaItems-JAR واستخرج GawharaItems-1.1.2.jar.
+4) حمّل artifact باسم GawharaItems-JAR واستخرج GawharaItems-1.1.4.jar.
 5) ارفع JAR إلى plugins في السيرفر وأعد تشغيله بالكامل.
 
 الأوامر:
@@ -28,7 +28,7 @@ Geyser / Bedrock:
 مهم: إضافة Paper تعمل للاعبي Java وBedrock، لكن الموديلات المخصصة لعميل Bedrock تتطلب ملفات Geyser المنفصلة. بعض لوحات الاستضافة قد لا تسمح بالوصول إلى مجلدات Geyser؛ يجب التأكد من إمكانية رفع الملفات.
 
 
-تفعيل تحميل Resource Pack تلقائيًا للاعبي Java (الإصدار 1.1.2):
+تفعيل تحميل Resource Pack تلقائيًا للاعبي Java (الإصدار 1.1.3):
 1) ارفع الملف resourcepack-java-26.3.zip الموجود في جذر المشروع إلى استضافة ملفات تعطي رابط HTTPS مباشرًا (يمكن استخدام GitHub Releases).
 2) الرابط المباشر لمستودع DRAGON223331/GawharaItems مضبوط مسبقًا في الإعدادات. بعد رفع النسخة الجديدة إلى main سيشير إلى الحزمة الجديدة.
 3) اترك resource-pack.sha1 كما هو إذا رفعت الملف دون تعديل. إذا أعدت ضغط الحزمة، احسب SHA-1 من الملف الجديد واستبدل القيمة.
@@ -38,3 +38,12 @@ Geyser / Bedrock:
 
 
 التحديث المرئي 1.1.2: تم تحسين أيقونات السيوف والدروع إلى 64x64، وإعادة رسم خامات الدروع الملبوسة على خريطة UV القياسية 64x32 لكل من Java وBedrock.
+
+
+إصلاح خامات دروع Bedrock في 1.1.3:
+- استبدل حزمة Geyser القديمة داخل مجلد packs بالحزمة الجديدة GawharaItems-Geyser-Bedrock-1.1.4.mcpack.
+- الحزمة الجديدة تتضمن خامات الارتداء المفقودة في textures/entity/equipment/humanoid وtextures/entity/equipment/humanoid_leggings؛ وهي الملفات التي كانت تسبب اللون الوردي عند ارتداء الدروع على Bedrock.
+- استبدل ملف gawharaitems_mappings.json في custom_mappings بالملف المرفق إن تغير لديك، ثم أعد تشغيل Geyser والسيرفر.
+- على جهاز Bedrock امسح حزمة GawharaSMP القديمة من Cached Data/Storage ثم أعد الاتصال حتى لا يستعمل العميل النسخة القديمة.
+
+إصلاح ظهور جلد الشخصية من خلال الدرع في 1.1.4: تمت إضافة parent_setup لكل من helmet/chestplate/leggings/boots داخل ملفات attachables لإخفاء طبقة الجلد الأصلية تحت قطعة الدرع. استبدل MCpack القديم، وأعد تشغيل Geyser، ثم امسح النسخة المخزنة مؤقتًا من إعدادات Resource Packs على عميل Bedrock وأعد الدخول.

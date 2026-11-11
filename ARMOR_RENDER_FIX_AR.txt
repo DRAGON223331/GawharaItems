@@ -1,0 +1,24 @@
+GawharaItems 1.1.6 - إصلاح شامل لعرض الدروع
+
+ما تغير في 1.1.6:
+- إلغاء قص/مسح أجزاء من خرائط UV التي كانت تحذف أسطحًا تستخدمها هندسة الدرع الافتراضية.
+- إعادة خامات Java إلى خريطة 64x32 الأصلية الكاملة لكل من humanoid وhumanoid_leggings.
+- إعادة خامات Bedrock إلى خرائط 64x32 الأصلية الكاملة: layer 1 للخوذة/الصدرية/البوتس، وlayer 2 للبنطال.
+- عدم إضافة UV الصدر إلى خامة البنطال وعدم مسح منطقة boot UV.
+- توحيد كل attachable مع bedrock_identifier الخاص بالقطعة، وباستخدام النمط القياسي الموثق في Mojang.
+- تطبيق ذلك على 6 أطقم × 4 قطع = 24 قطعة.
+
+تثبيت Geyser:
+1) أوقف السيرفر. احذف أي نسخة قديمة من GawharaItems (.mcpack أو .zip) داخل plugins/Geyser-Spigot/packs واترك نسخة 1.1.6 فقط.
+2) احذف ملفات gawharaitems_mappings-*.json القديمة من plugins/Geyser-Spigot/custom_mappings واترك gawharaitems_mappings-1.1.6.json فقط.
+3) تأكد أن enable-custom-content: true.
+4) شغّل السيرفر/Geyser بالكامل من جديد.
+5) امسح حزمة GawharaSMP القديمة من Cached Data على عميل Bedrock ثم أعد الاتصال.
+
+Java:
+- ارفع resourcepack-java-26.3.zip الجديد إلى نفس رابط GitHub Raw الموجود في config.yml.
+- SHA-1 داخل config.yml يخص ملف ZIP المرفق في هذا الإصدار.
+- ثبّت JAR 1.1.6 من GitHub Actions بعد نجاح البناء.
+
+ملاحظة التحقق:
+تم التحقق من بنية الملفات، ومسارات الخامات، ومعرّفات attachables/mappings، وأبعاد الخامات. لا يتوفر عميل Minecraft أو Paper 26.3 داخل بيئة البناء لإجراء اختبار بصري داخل اللعبة؛ يلزم التحقق النهائي على السيرفر والعميل بعد التثبيت.
