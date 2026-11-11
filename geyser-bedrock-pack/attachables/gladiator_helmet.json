@@ -8,11 +8,11 @@
         "enchanted": "armor_enchanted"
       },
       "textures": {
-        "default": "textures/models/armor/gladiator_1",
+        "default": "textures/models/armor/custom_gladiator_helmet",
         "enchanted": "textures/misc/enchanted_actor_glint"
       },
       "geometry": {
-        "default": "geometry.humanoid.armor.helmet"
+        "default": "geometry.gawharaitems.gladiator_helmet"
       },
       "scripts": {
         "parent_setup": "variable.helmet_layer_visible = 0.0;"
