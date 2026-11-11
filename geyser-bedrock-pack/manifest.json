@@ -1,12 +1,12 @@
 {
   "format_version": 2,
   "header": {
-    "name": "GawharaSMP Medieval War Armory",
-    "description": "Medieval armor, battle weapons and custom tools for GawharaSMP",
+    "name": "GawharaSMP \u2014 Realms Armor Edition",
+    "description": "Distinct medieval armor identities: devil horns, royal crown, authentic Viking nasal helm, dragon crest, angel halo and more.",
     "uuid": "10ae8c62-9ef4-41de-95c4-7fe74b532425",
     "version": [
       1,
-      2,
+      3,
       0
     ],
     "min_engine_version": [
@@ -21,7 +21,7 @@
       "uuid": "983cb577-82fa-42fe-8665-05488854d07f",
       "version": [
         1,
-        2,
+        3,
         0
       ]
     }
