@@ -1,0 +1,9 @@
+إصلاح عدم ظهور الدروع على Java:
+- كان مسار الخامة في equipment/*.json مكتوب gawharaitems:entity/equipment/humanoid/NAME
+  والصحيح gawharaitems:NAME (ماينكرافت بيضيف textures/entity/equipment/<layer>/ لوحده).
+- تم إصلاح الأطقم الستة.
+- SHA-1 الجديد للـ ZIP: f698438345447528a9c387ac2e16698300d33590
+الخطوات:
+1) ارفع resourcepack-java-26.3.zip على نفس رابط GitHub Raw.
+2) عدّل sha1 في plugins/GawharaItems/config.yml بالقيمة الجديدة (الملف الموجود لا يتحدث تلقائيًا).
+3) /gitems reload ثم اخرج وادخل ووافق على تحميل الـ pack.
